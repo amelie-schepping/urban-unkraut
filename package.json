@@ -15,6 +15,7 @@
   "keywords": [],
   "dependencies": {
     "bootstrap": "^5.3.5",
+    "bootstrap-icons": "^1.11.3",
     "three": "^0.176.0"
   },
   "devDependencies": {

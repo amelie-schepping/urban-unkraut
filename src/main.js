@@ -55,7 +55,7 @@ scene.add(reticle);
 // Modell laden (unsichtbar bis Fläche erkannt)
 const loader = new GLTFLoader();
 loader.load(
-  import.meta.env.BASE_URL + "assets/models/leberbluemchen.glb",
+  import.meta.env.BASE_URL + "assets/models/leberbluemchenWithTextures.glb",
   function (gltf) {
     flowerModel = gltf.scene;
     flowerModel.scale.set(0.2, 0.2, 0.2); // Größe anpassen
