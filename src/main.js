@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera();
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.xr.enabled = true;
-document.body.appendChild(renderer.domElement);
+document.getElementById("renderer-container").appendChild(renderer.domElement);
 
 const arButton = ARButton.createButton(renderer, {
   requiredFeatures: ["hit-test"],
@@ -55,7 +55,7 @@ scene.add(reticle);
 // Modell laden (unsichtbar bis Fläche erkannt)
 const loader = new GLTFLoader();
 loader.load(
-  import.meta.env.BASE_URL + "assets/models/leberbluemchenWithTextures.glb",
+  import.meta.env.BASE_URL + "assets/models/lederbluemchenWithTextures.glb",
   function (gltf) {
     flowerModel = gltf.scene;
     flowerModel.scale.set(0.2, 0.2, 0.2); // Größe anpassen
