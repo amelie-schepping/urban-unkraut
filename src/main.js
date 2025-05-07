@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera();
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.xr.enabled = true;
-document.getElementById("renderer-container").appendChild(renderer.domElement);
+document.body.appendChild(renderer.domElement);
 
 const arButton = ARButton.createButton(renderer, {
   requiredFeatures: ["hit-test"],
@@ -55,13 +55,15 @@ scene.add(reticle);
 // Modell laden (unsichtbar bis Fläche erkannt)
 const loader = new GLTFLoader();
 loader.load(
-  import.meta.env.BASE_URL + "assets/models/lederbluemchenWithTextures.glb",
+  import.meta.env.BASE_URL + "assets/models/modelWTextures.glb",
   function (gltf) {
     flowerModel = gltf.scene;
     flowerModel.scale.set(0.2, 0.2, 0.2); // Größe anpassen
     flowerModel.rotation.y = Math.PI; // Modell drehen
     flowerModel.visible = false; // erst sichtbar nach Platzierung
     scene.add(flowerModel);
+
+    console.log("Modell geladen:", gltf.scene);
 
     if (gltf.animations.length > 0) {
       mixer = new THREE.AnimationMixer(flowerModel);
