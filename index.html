@@ -1,128 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Unkraut</title>
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><i class="bi bi-flower1"></i> Urban Unkraut</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-info-circle me-1"></i>Anleitung</a
-              >
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#samenkiosk"
-                ><i class="bi bi-shop me-1"></i> Samenkiosk</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galerie"
-                ><i class="bi bi-book me-1"></i> Deine Bibliothek</a
-              >
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Unkraut</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-flower1"></i> Urban Unkraut</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i>Anleitung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galerie"><i class="bi bi-book me-1"></i> Deine Bibliothek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#samenkiosk"><i class="bi bi-shop me-1"></i> Samenkiosk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Einleitung -->
+  <main class="container text-center my-5">
+    <h1 class="display-5 text">Willkommen bei Urban Unkraut!</h1>
+    <p class="lead text-muted">
+      Entdecke urbane Pflanzenvielfalt durch Augmented Reality. Tippe, um
+      deine eigene Blume zu platzieren!
+    </p>
+
+    <div class="text-center mt-4" id="ar-button-container"></div>
+
+    <div class="mt-4">
+      <a href="page1.html" class="btn btn-warning">AR mit Image Marker</a>
+    </div>
+
+    <p class="mt-4 bg-dark text-light p-4 rounded">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto
+      ipsam quod officia quis voluptatibus quia animi obcaecati porro
+      quibusdam beatae iusto soluta reiciendis eos eaque pariatur delectus,
+      laudantium at?
+    </p>
+  </main>
+
+  <!-- Galerie-Bereich -->
+  <section class="container my-5" id="galerie">
+    <h2 class="text-center mb-4">Deine Bibliothek</h2>
+    <div class="row g-4">
+      <!-- Platzhalter-Karten -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-flower1 display-4 text-success"></i>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <!-- Einleitung -->
-    <main class="container text-center my-5">
-      <h1 class="display-5 text">Willkommen bei Urban Unkraut!</h1>
-      <p class="lead text-muted">
-        Entdecke urbane Pflanzenvielfalt durch Augmented Reality. Tippe, um
-        deine eigene Blume zu platzieren!
-      </p>
-
-      <div class="text-center mt-4" id="ar-button-container"></div>
-
-      <div class="mt-4">
-        <a href="page1.html" class="btn btn-warning">AR mit Image Marker</a>
+      <div class="col-sm-6 col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-flower1 display-4 text-success"></i>
+          </div>
+        </div>
       </div>
 
-      <p class="mt-4 bg-dark text-light p-4 rounded">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto
-        ipsam quod officia quis voluptatibus quia animi obcaecati porro
-        quibusdam beatae iusto soluta reiciendis eos eaque pariatur delectus,
-        laudantium at?
-      </p>
-    </main>
+      <div class="col-sm-6 col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-flower1 display-4 text-success"></i>
+          </div>
+        </div>
+      </div>
 
-    <!-- Galerie-Bereich -->
-    <section class="container my-5" id="galerie">
-      <h2 class="text-center mb-4">Deine Bibliothek</h2>
-      <div class="row g-4">
-        <!-- Platzhalter-Karten -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-flower1 display-4 text-success"></i>
-              <h5 class="card-title mt-2">Blume 1</h5>
-              <p class="card-text text-muted">
-                Hier könnte eine gespeicherte Blume stehen.
-              </p>
+      <!-- Weitere Karten hier dynamisch-->
+
+    </div>
+  </section>
+
+  <section class="container my-5" id="galerie">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="resources/flower.png" class="d-block w-100" alt="Blume 1">
+            </div>
+            <div class="col-12 col-md-4 d-none d-md-block">
+              <img src="resources/pink_flower.png" class="d-block w-100" alt="Blume 2">
+            </div>
+            <div class="col-12 col-md-4 d-none d-md-block">
+              <img src="resources/sunflower.png" class="d-block w-100" alt="Blume 3">
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-flower1 display-4 text-success"></i>
-              <h5 class="card-title mt-2">Blume 2</h5>
-              <p class="card-text text-muted">
-                Hier könnte eine gespeicherte Blume stehen.
-              </p>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="resources/flower2.png" class="d-block w-100" alt="Blume 4">
+            </div>
+            <div class="col-12 col-md-4 d-none d-md-block">
+              <img src="resources/pink_flower2.png" class="d-block w-100" alt="Blume 5">
+            </div>
+            <div class="col-12 col-md-4 d-none d-md-block">
+              <img src="resources/sunflower2.png" class="d-block w-100" alt="Blume 6">
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-flower1 display-4 text-success"></i>
-              <h5 class="card-title mt-2">Blume 3</h5>
-              <p class="card-text text-muted">
-                Hier könnte eine gespeicherte Blume stehen.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Weitere Karten hier dynamisch-->
       </div>
-    </section>
 
-    <section class="container my-5" id="samenkiosk">
-      <h2 class="text-center mb-4">Samenkiosk</h2>
-      <p class="lead text-muted text-center">
-        Übersicht von allen teilnehmenden Kiosken.
-      </p>
-      <img
-        src="https://simplymaps.de/wp-content/uploads/SIMPLYMAPS-Stadtplan-D%C3%BCsseldorf-Detail.jpg"
-        class="rounded w-75 d-block mx-auto"
-        alt="Düsseldorf Map" />
-    </section>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+  </section>
+
+  <section class="container my-5" id="samenkiosk">
+    <h2 class="text-center mb-4">Samenkiosk</h2>
+    <p class="lead text-muted text-center">
+      Übersicht von allen teilnehmenden Kiosken.
+    </p>
+    <img src="https://simplymaps.de/wp-content/uploads/SIMPLYMAPS-Stadtplan-D%C3%BCsseldorf-Detail.jpg"
+      class="rounded w-75 d-block mx-auto" alt="Düsseldorf Map" />
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
