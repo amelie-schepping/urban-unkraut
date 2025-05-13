@@ -8,7 +8,7 @@ AFRAME.registerComponent("gltf-with-animation", {
 
     // Modell laden
     loader.load(
-      "/urban-unkraut/assets/models/plant_outdoors.glb",
+      "/urban-unkraut/assets/models/modelWTextures.glb",
       (gltf) => {
         // geladenes Modell als visuelles Objekt des <a-entity>
         el.setObject3D("mesh", gltf.scene);

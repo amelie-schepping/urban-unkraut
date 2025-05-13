@@ -7,6 +7,9 @@ import { ARButton } from "three/examples/jsm/webxr/ARButton.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+// Styles
+import "./style.scss";
+
 // Szene, Kamera und Renderer initialisieren
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera();

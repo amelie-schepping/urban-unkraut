@@ -9,7 +9,7 @@
   <body>
     <!-- Navigation -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><i class="bi bi-flower1"></i> Urban Unkraut</a
@@ -45,7 +45,7 @@
     </nav>
 
     <!-- Einleitung -->
-    <main class="container text-center my-5">
+    <!-- <main class="container text-center my-5">
       <h1 class="display-5 text">Willkommen bei Urban Unkraut!</h1>
       <p class="lead text-muted">
         Entdecke urbane Pflanzenvielfalt durch Augmented Reality. Tippe, um
@@ -64,62 +64,80 @@
         quibusdam beatae iusto soluta reiciendis eos eaque pariatur delectus,
         laudantium at?
       </p>
-    </main>
+    </main> -->
 
-    <!-- Galerie-Bereich -->
-    <section class="container my-5" id="galerie">
-      <h2 class="text-center mb-4">Deine Bibliothek</h2>
-      <div class="row g-4">
-        <!-- Platzhalter-Karten -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-flower1 display-4 text-success"></i>
-              <h5 class="card-title mt-2">Blume 1</h5>
-              <p class="card-text text-muted">
-                Hier könnte eine gespeicherte Blume stehen.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-flower1 display-4 text-success"></i>
-              <h5 class="card-title mt-2">Blume 2</h5>
-              <p class="card-text text-muted">
-                Hier könnte eine gespeicherte Blume stehen.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-flower1 display-4 text-success"></i>
-              <h5 class="card-title mt-2">Blume 3</h5>
-              <p class="card-text text-muted">
-                Hier könnte eine gespeicherte Blume stehen.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Weitere Karten hier dynamisch-->
+    <!-- Container unter Navbar -->
+    <div class="container mt-4">
+      <!-- Button "Neue Pflanze freigeschaltet" -->
+      <div class="text-center mb-4">
+        <button
+          class="btn btn-outline-dark d-inline-flex align-items-center gap-2 px-4 py-2">
+          <i class="bi bi-flower1"></i>
+          Neue Pflanze freigeschaltet!
+        </button>
       </div>
-    </section>
+
+      <!-- Horizontale Galerie mit Pflanzen-Icons -->
+
+      <div class="mb-4 overflow-auto d-flex justify-content-center p-4">
+        <div class="d-flex flex-nowrap gap-3 px-2">
+          <!-- Karte 1 -->
+          <div
+            class="card text-center border-0 shadow-sm"
+            style="min-width: 300px">
+            <div class="card-body">
+              <i class="bi bi-flower3" style="font-size: 3rem"></i>
+              <h6 class="mt-2">Löwenzahn</h6>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-2">
+              <a href="page1.html" class="btn btn-dark">AR starten</a>
+            </div>
+          </div>
+
+          <!-- Karte 2 -->
+          <div
+            class="card text-center border-0 shadow-sm"
+            style="min-width: 300px">
+            <div class="card-body">
+              <i class="bi bi-tree" style="font-size: 3rem"></i>
+              <h6 class="mt-2">Baum</h6>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-2">
+              <a href="page1.html" class="btn btn-dark">AR starten</a>
+            </div>
+          </div>
+
+          <!-- Karte 3 -->
+          <div
+            class="card text-center border-0 shadow-sm"
+            style="min-width: 300px">
+            <div class="card-body">
+              <i class="bi bi-flower1" style="font-size: 3rem"></i>
+              <h6 class="mt-2">Blüte</h6>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-2">
+              <a href="page1.html" class="btn btn-dark">AR starten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Link zur ganzen Sammlung -->
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-dark">Ganze Sammlung ansehen</a>
+      </div>
+    </div>
 
     <section class="container my-5" id="samenkiosk">
-      <h2 class="text-center mb-4">Samenkiosk</h2>
-      <p class="lead text-muted text-center">
-        Übersicht von allen teilnehmenden Kiosken.
-      </p>
+      <h2 class="text-center mb-4">zur nächsten Samenstation:</h2>
       <img
         src="https://simplymaps.de/wp-content/uploads/SIMPLYMAPS-Stadtplan-D%C3%BCsseldorf-Detail.jpg"
-        class="rounded w-75 d-block mx-auto"
+        class="rounded w-25 d-block mx-auto"
         alt="Düsseldorf Map" />
+
+      <p class="text-center mt-4">
+        Hier kannst du dir ein Samenpaket abholen, um die Stadt zu begrünen.
+      </p>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
