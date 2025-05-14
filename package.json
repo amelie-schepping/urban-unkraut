@@ -1,14 +1,16 @@
 {
   "name": "urban-unkraut",
   "version": "1.0.0",
-  "main": "index.js",
   "description": "",
   "author": "",
   "license": "ISC",
+  "main": "index.js",
+  "homepage": "https://amelie-schepping.github.io/urban-unkraut",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
