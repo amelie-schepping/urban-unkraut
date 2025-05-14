@@ -2,7 +2,7 @@
 
 // === Bootstrap-Variablen ===
 
-$font-family-base: "Nunito", sans-serif;
+$font-family-base: "kollektif", sans-serif;
 
 // === Custom Farben ===
 $green-dark: #2b4d1b;
@@ -23,3 +23,18 @@ $dark: $green-dark;
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "gismo";
+  src: url("public/assets/fonts/gismo/GISMO-TRIAL-RECTANGULAR-BF64AF622194E71.TTF")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "kollektif";
+  src: url("public/assets/fonts/kollektif/KOLLEKTIF.TTF") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}

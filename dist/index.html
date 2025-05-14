@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Unkraut</title>
-    <script type="module" crossorigin src="/urban-unkraut/assets/main-5V9QAxU_.js"></script>
+    <script type="module" crossorigin src="/urban-unkraut/assets/main-DtAmAobl.js"></script>
     <link rel="modulepreload" crossorigin href="/urban-unkraut/assets/style-DTtDIMqk.js">
     <link rel="stylesheet" crossorigin href="/urban-unkraut/assets/style-BwjRMRRF.css">
-    <link rel="stylesheet" crossorigin href="/urban-unkraut/assets/main-BXlVBMxx.css">
+    <link rel="stylesheet" crossorigin href="/urban-unkraut/assets/main-mSdA5n_S.css">
   </head>
   <body>
     <!-- Navigation -->
@@ -82,53 +82,86 @@
 
       <!-- Horizontale Galerie mit Pflanzen-Icons -->
 
-      <div class="mb-4 overflow-auto d-flex justify-content-center p-4">
-        <div class="d-flex flex-nowrap gap-3 px-2">
-          <!-- Karte 1 -->
-          <div
-            class="card text-center border-0 shadow-sm"
-            style="min-width: 300px">
-            <div class="card-body">
-              <i class="bi bi-flower3" style="font-size: 3rem"></i>
-              <h6 class="mt-2">Löwenzahn</h6>
+      <!--Bibliothek als Gallerie-->
+      <section class="container bg-primary text-white p-5 rounded" id="galerie">
+        <h2 class="text-center mb-4">Deine Bibliothek</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/flower-Cp9aAHWI.png"
+                    class="d-block w-100"
+                    alt="Blume 1" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/pink_flower-CrvVXoVV.png"
+                    class="d-block w-100"
+                    alt="Blume 2" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/sunflower-C28PdhKK.png"
+                    class="d-block w-100"
+                    alt="Blume 3" />
+                </div>
+              </div>
             </div>
-            <div class="card-footer bg-transparent border-0 p-2">
-              <a href="page1.html" class="btn btn-dark">AR starten</a>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/flower-Cp9aAHWI.png"
+                    class="d-block w-100"
+                    alt="Blume 4" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/pink_flower-CrvVXoVV.png"
+                    class="d-block w-100"
+                    alt="Blume 5" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/sunflower-C28PdhKK.png"
+                    class="d-block w-100"
+                    alt="Blume 6" />
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Karte 2 -->
-          <div
-            class="card text-center border-0 shadow-sm"
-            style="min-width: 300px">
-            <div class="card-body">
-              <i class="bi bi-tree" style="font-size: 3rem"></i>
-              <h6 class="mt-2">Baum</h6>
-            </div>
-            <div class="card-footer bg-transparent border-0 p-2">
-              <a href="page1.html" class="btn btn-dark">AR starten</a>
-            </div>
-          </div>
-
-          <!-- Karte 3 -->
-          <div
-            class="card text-center border-0 shadow-sm"
-            style="min-width: 300px">
-            <div class="card-body">
-              <i class="bi bi-flower1" style="font-size: 3rem"></i>
-              <h6 class="mt-2">Blüte</h6>
-            </div>
-            <div class="card-footer bg-transparent border-0 p-2">
-              <a href="page1.html" class="btn btn-dark">AR starten</a>
-            </div>
-          </div>
+          <!-- Steuerung -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Zurück</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Weiter</span>
+          </button>
         </div>
-      </div>
 
-      <!-- 3. Link zur ganzen Sammlung -->
-      <div class="text-center">
-        <a href="#" class="btn btn-outline-dark">Ganze Sammlung ansehen</a>
-      </div>
+        <div class="d-flex justify-content-center mt-4">
+          <!--button zur bibliothek Ansicht-->
+          <a class="btn btn-dark" href="library.html" role="button"
+            >...deine ganze sammlung anzeigen</a
+          >
+        </div>
+      </section>
     </div>
 
     <section class="container my-5" id="samenkiosk">
