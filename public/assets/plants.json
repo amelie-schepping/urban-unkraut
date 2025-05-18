@@ -12,5 +12,12 @@
     "image": "/urban-unkraut/assets/images/sunflower.png",
     "model": "/urban-unkraut/assets/models/modelWTextures.glb",
     "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten."
+  },
+  {
+    "id": "blume3",
+    "name": "Gänseblümchen",
+    "image": "/urban-unkraut/assets/images/pink_flower.png",
+    "model": "/urban-unkraut/assets/models/modelWTextures.glb",
+    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten."
   }
 ]
