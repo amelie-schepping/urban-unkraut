@@ -1,59 +1,81 @@
-const THREE = AFRAME.THREE; // Nutze die gleiche THREE-Version wie A-Frame
+const THREE = AFRAME.THREE;
 
-// eigene A-Frame-Komponente zur Modellplatzierung und Animation
+// Hilfsfunktion zum Auslesen des Query-Parameters
+function getPlantIdFromQuery() {
+  const params = new URLSearchParams(window.location.search);
+  return [...params.keys()][0]; // z. B. "blume1"
+}
+
 AFRAME.registerComponent("gltf-with-animation", {
   init: function () {
-    const el = this.el; // Referenz auf das <a-entity>, das diese Komponente verwendet
-    const loader = new THREE.GLTFLoader(); // Loader für GLB-/GLTF-Dateien
+    const el = this.el;
+    const loader = new THREE.GLTFLoader();
+    const plantId = getPlantIdFromQuery();
 
-    // Modell laden
-    loader.load(
-      "/urban-unkraut/assets/models/modelWTextures.glb",
-      (gltf) => {
-        // geladenes Modell als visuelles Objekt des <a-entity>
-        el.setObject3D("mesh", gltf.scene);
-
-        // Animation mit AnimationMixer starten
-        if (gltf.animations && gltf.animations.length > 0) {
-          this.mixer = new THREE.AnimationMixer(gltf.scene);
-          gltf.animations.forEach((clip) => {
-            this.mixer.clipAction(clip).play();
-          });
+    // Pflanzendaten aus JSON laden
+    fetch("/urban-unkraut/assets/plants.json")
+      .then((res) => res.json())
+      .then((plants) => {
+        const plant = plants.find((p) => p.id === plantId);
+        if (!plant) {
+          console.warn("Pflanze nicht gefunden:", plantId);
+          return;
         }
-      },
-      undefined,
-      (error) => {
-        console.error("Fehler beim Laden des GLB-Modells:", error);
-      }
-    );
 
-    // Text-Entity direkt neben dem Modell
-    // const text = document.createElement("a-text");
-    // text.setAttribute("value", "Das Leberbluemchen"); // Textinhalt
-    // text.setAttribute("position", "0.8 0.8 0"); // X=0.5 → rechts, Y=0.3 → Höhe
-    // text.setAttribute("color", "#FFFFF"); // Textfarbe
-    // text.setAttribute("width", 2); // Skalierung der Schriftgröße
-    // text.setAttribute("align", "center"); // Zentrierter Text
+        // Dynamisch das zugehörige Modell laden
+        loader.load(
+          plant.model,
+          (gltf) => {
+            el.setObject3D("mesh", gltf.scene);
 
-    // el.appendChild(text);
+            if (gltf.animations && gltf.animations.length > 0) {
+              this.mixer = new THREE.AnimationMixer(gltf.scene);
+              gltf.animations.forEach((clip) => {
+                this.mixer.clipAction(clip).play();
+              });
+            }
 
-    // const text2 = document.createElement("a-text");
-    // text2.setAttribute(
-    //   "value",
-    //   "Das Leberblümchen übersteht den Winter mit Überdauerungsknospen, die sich unmittelbar an der Erdoberfläche in den Blattachseln und im Schutz der überdauernden Blätter befinden und gehört deshalb zu den wintergrünen Hemikryptophyten. "
-    // );
-    // text2.setAttribute("position", "0.8 0.6 0"); // leicht davor
-    // text2.setAttribute("color", "#FFFFFF");
-    // text2.setAttribute("width", 1);
-    // text2.setAttribute("align", "center");
-    // text2.setAttribute("baseline", "center");
-    // el.appendChild(text2);
+            // Titel anzeigen
+            const nameText = document.createElement("a-text");
+            nameText.setAttribute("value", plant.name);
+            nameText.setAttribute("position", "0.8 0.8 0");
+            nameText.setAttribute("color", "#59772f");
+            nameText.setAttribute("width", 2);
+            nameText.setAttribute("align", "center");
+            el.appendChild(nameText);
+
+            // Beschreibung anzeigen
+            const descText = document.createElement("a-text");
+            descText.setAttribute("value", plant.description);
+            descText.setAttribute("position", "0.8 0.6 0");
+            descText.setAttribute("color", "#FFFFFF");
+            descText.setAttribute("width", 1);
+            descText.setAttribute("align", "center");
+            descText.setAttribute("baseline", "center");
+            el.appendChild(descText);
+
+            // Bild anzeigen
+            const image = document.createElement("a-image");
+            image.setAttribute("src", plant.image);
+            image.setAttribute("position", "0.8 -0.4 0");
+            image.setAttribute("width", 1.2);
+            image.setAttribute("height", 1.2);
+            el.appendChild(image);
+          },
+          undefined,
+          (error) => {
+            console.error("Fehler beim Laden des GLB-Modells:", error);
+          }
+        );
+      })
+      .catch((err) => {
+        console.error("Fehler beim Laden der Pflanzeninfos:", err);
+      });
   },
 
   tick: function (time, deltaTime) {
-    // Pro Frame: falls ein AnimationMixer aktiv ist, aktualisiere ihn mit Zeitdifferenz
     if (this.mixer) {
-      this.mixer.update(deltaTime / 1000); // deltaTime ist in Millisekunden, deshalb /1000
+      this.mixer.update(deltaTime / 1000);
     }
   },
 });

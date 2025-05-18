@@ -26,7 +26,7 @@ $dark: $green-dark;
 
 @font-face {
   font-family: "gismo";
-  src: url("public/assets/fonts/gismo/GISMO-TRIAL-RECTANGULAR-BF64AF622194E71.TTF")
+  src: url("/assets/fonts/gismo/GISMO-TRIAL-RECTANGULAR-BF64AF622194E71.TTF")
     format("truetype");
   font-weight: 200;
   font-style: normal;
@@ -34,7 +34,9 @@ $dark: $green-dark;
 
 @font-face {
   font-family: "kollektif";
-  src: url("public/assets/fonts/kollektif/KOLLEKTIF.TTF") format("truetype");
+  src: url("/assets/fonts/kollektif/KOLLEKTIF.TTF") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
+
+

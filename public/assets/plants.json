@@ -1,0 +1,16 @@
+[
+  {
+    "id": "blume1",
+    "name": "Lederblümchen",
+    "image": "/urban-unkraut/assets/images/flower.png",
+    "model": "/urban-unkraut/assets/models/leberbluemchen.glb",
+    "description": "Diese Blume ist cool"
+  },
+  {
+    "id": "blume2",
+    "name": "Gänseblümchen",
+    "image": "/urban-unkraut/assets/images/sunflower.png",
+    "model": "/urban-unkraut/assets/models/modelWTextures.glb",
+    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten."
+  }
+]
