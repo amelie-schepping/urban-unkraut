@@ -12,6 +12,13 @@ AFRAME.registerComponent("gltf-with-animation", {
     const loader = new THREE.GLTFLoader();
     const plantId = getPlantIdFromQuery();
 
+    // Pflanze freischalten
+    const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
+    if (!unlocked.includes(plantId)) {
+      unlocked.push(plantId);
+      localStorage.setItem("unlockedPlants", JSON.stringify(unlocked));
+    }
+
     // Pflanzendaten aus JSON laden
     fetch("/urban-unkraut/assets/plants.json")
       .then((res) => res.json())

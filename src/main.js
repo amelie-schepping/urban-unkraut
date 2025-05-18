@@ -5,15 +5,17 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // Styles
 import "./style.scss";
 
-// src/main.js
-
+// Pflanzen dynamisch laden
 fetch("/urban-unkraut/assets/plants.json")
   .then((res) => res.json())
   .then((plants) => {
     const container = document.querySelector(".carousel-inner");
-    container.innerHTML = ""; // Leeren
+    container.innerHTML = "";
 
-    // Gruppiere Pflanzen in Dreiergruppen für Slides
+    const unlockedPlants = JSON.parse(
+      localStorage.getItem("unlockedPlants") || "[]"
+    );
+
     const chunkSize = 3;
     for (let i = 0; i < plants.length; i += chunkSize) {
       const group = plants.slice(i, i + chunkSize);
@@ -29,14 +31,22 @@ fetch("/urban-unkraut/assets/plants.json")
         col.classList.add("col-4");
 
         const img = document.createElement("img");
-        img.src = plant.image;
+
+        // Prüfen ob unlocked
+        const isUnlocked = unlockedPlants.includes(plant.id);
+
+        img.src = isUnlocked
+          ? plant.image
+          : "/urban-unkraut/assets/images/locked_icon.png";
         img.classList.add("d-block", "w-100");
         img.alt = plant.name;
 
-        // Optional: klickbare Bilder verlinken auf AR-Ansicht
-        img.addEventListener("click", () => {
-          window.location.href = `/urban-unkraut/page1.html?${plant.id}`;
-        });
+        // Nur klickbar, wenn unlocked
+        if (isUnlocked) {
+          img.addEventListener("click", () => {
+            window.location.href = `/urban-unkraut/page1.html?${plant.id}`;
+          });
+        }
 
         col.appendChild(img);
         row.appendChild(col);

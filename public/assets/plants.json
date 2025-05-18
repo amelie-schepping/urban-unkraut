@@ -4,20 +4,23 @@
     "name": "Lederblümchen",
     "image": "/urban-unkraut/assets/images/flower.png",
     "model": "/urban-unkraut/assets/models/leberbluemchen.glb",
-    "description": "Diese Blume ist cool"
+    "description": "Diese Blume ist cool",
+    "locked": true
   },
   {
     "id": "blume2",
     "name": "Gänseblümchen",
     "image": "/urban-unkraut/assets/images/sunflower.png",
     "model": "/urban-unkraut/assets/models/modelWTextures.glb",
-    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten."
+    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
+    "locked": true
   },
   {
     "id": "blume3",
     "name": "Gänseblümchen",
     "image": "/urban-unkraut/assets/images/pink_flower.png",
     "model": "/urban-unkraut/assets/models/modelWTextures.glb",
-    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten."
+    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
+    "locked": true
   }
 ]
