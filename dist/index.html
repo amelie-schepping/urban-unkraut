@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Unkraut</title>
+    <script type="module" crossorigin src="/urban-unkraut/assets/main-DtAmAobl.js"></script>
+    <link rel="modulepreload" crossorigin href="/urban-unkraut/assets/style-DTtDIMqk.js">
+    <link rel="stylesheet" crossorigin href="/urban-unkraut/assets/style-BwjRMRRF.css">
+    <link rel="stylesheet" crossorigin href="/urban-unkraut/assets/main-mSdA5n_S.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-flower1"></i> Urban Unkraut</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-info-circle me-1"></i>Anleitung</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#samenkiosk"
+                ><i class="bi bi-shop me-1"></i> Samenkiosk</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galerie"
+                ><i class="bi bi-book me-1"></i> Deine Bibliothek</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Einleitung -->
+    <!-- <main class="container text-center my-5">
+      <h1 class="display-5 text">Willkommen bei Urban Unkraut!</h1>
+      <p class="lead text-muted">
+        Entdecke urbane Pflanzenvielfalt durch Augmented Reality. Tippe, um
+        deine eigene Blume zu platzieren!
+      </p>
+
+      <div class="text-center mt-4" id="ar-button-container"></div>
+
+      <div class="mt-4">
+        <a href="page1.html" class="btn btn-warning">AR mit Image Marker</a>
+      </div>
+
+      <p class="mt-4 bg-dark text-light p-4 rounded">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto
+        ipsam quod officia quis voluptatibus quia animi obcaecati porro
+        quibusdam beatae iusto soluta reiciendis eos eaque pariatur delectus,
+        laudantium at?
+      </p>
+    </main> -->
+
+    <!-- Container unter Navbar -->
+    <div class="container mt-4">
+      <!-- Button "Neue Pflanze freigeschaltet" -->
+      <div class="text-center mb-4">
+        <button
+          class="btn btn-outline-dark d-inline-flex align-items-center gap-2 px-4 py-2">
+          <i class="bi bi-flower1"></i>
+          Neue Pflanze freigeschaltet!
+        </button>
+      </div>
+
+      <!-- Horizontale Galerie mit Pflanzen-Icons -->
+
+      <!--Bibliothek als Gallerie-->
+      <section class="container bg-primary text-white p-5 rounded" id="galerie">
+        <h2 class="text-center mb-4">Deine Bibliothek</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/flower-Cp9aAHWI.png"
+                    class="d-block w-100"
+                    alt="Blume 1" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/pink_flower-CrvVXoVV.png"
+                    class="d-block w-100"
+                    alt="Blume 2" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/sunflower-C28PdhKK.png"
+                    class="d-block w-100"
+                    alt="Blume 3" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/flower-Cp9aAHWI.png"
+                    class="d-block w-100"
+                    alt="Blume 4" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/pink_flower-CrvVXoVV.png"
+                    class="d-block w-100"
+                    alt="Blume 5" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="/urban-unkraut/assets/sunflower-C28PdhKK.png"
+                    class="d-block w-100"
+                    alt="Blume 6" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Steuerung -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Zurück</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Weiter</span>
+          </button>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+          <!--button zur bibliothek Ansicht-->
+          <a class="btn btn-dark" href="library.html" role="button"
+            >...deine ganze sammlung anzeigen</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <section class="container my-5" id="samenkiosk">
+      <h2 class="text-center mb-4">zur nächsten Samenstation:</h2>
+      <img
+        src="https://simplymaps.de/wp-content/uploads/SIMPLYMAPS-Stadtplan-D%C3%BCsseldorf-Detail.jpg"
+        class="rounded w-25 d-block mx-auto"
+        alt="Düsseldorf Map" />
+
+      <p class="text-center mt-4">
+        Hier kannst du dir ein Samenpaket abholen, um die Stadt zu begrünen.
+      </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
