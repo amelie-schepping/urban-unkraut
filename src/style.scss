@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+// === Bootstrap-Variablen ===
+
+$font-family-base: "kollektif", sans-serif;
+
+// === Custom Farben ===
+$green-dark: #2b4d1b;
+$green-medium: #59772f;
+$green-light: #89bf4a;
+$earth: #96793d;
+
+// === Bootstrap Farbvariablen überschreiben ===
+$body-bg: #fcfbf9;
+$light: #fcfbf9;
+$primary: $green-medium;
+$secondary: $earth;
+$success: $green-light;
+$dark: $green-dark;
+
+// === Bootstrap SCSS Imports ===
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "gismo";
+  src: url("/assets/fonts/gismo/GISMO-TRIAL-RECTANGULAR-BF64AF622194E71.TTF")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "kollektif";
+  src: url("/assets/fonts/kollektif/KOLLEKTIF.TTF") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
