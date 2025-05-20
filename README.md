@@ -23,21 +23,27 @@ Das Projekt soll auf allen Betriebssystemen und Browsern funktionieren, um mögl
 - Dart Sass - Für das Styling mit SCSS
 
 ## Project Struktur (Auswahl)
-Distribution files (dist/)
-- dist/index.html - Haupteinstiegspunkt zur Website
-- dist/page1.html - Zusätzliche Webseite
+dist/ Distribution files: für den deploy  des fertigen Outputs 
+- dist/index.html - Haupteinstiegspunkt zur Webseite
 - dist/assets/ - Kompilierte statische Assets für die Bereitstellung
+- Wird beim Befehl npm run build erzeugt
+- Enthält die fertige, gebaute Website
+- Wird für Deployment und Hosting verwendet
 
-Quelldateien (src/)
+src/ Quelldateien:
 - src/main.js - Haupt-JavaScript-Datei zum dynamischen Laden der Blumen
 - src/style.css und src/style.scss - Styling für die Website
 
-Öffentliche Assets (public/)
+public/ Öffentliche Assets: arteiete mit Quellmaterialien
 - public/marker/ - AR-Marker, die für das AR-Erlebnis vom Nutzer gescannt werden
-- public/models/ - 3D-Modelle für Blumen
+- public/models/ - 3D-Modelle für Blumen (.glb)
 - public/assets/plants.json - JSON-Datendatei mit Blumen und Metadaten
+- Wird direkt vom Vite-Webserver genutzt (bei npm run dev)
+- Enthält statische Dateien wie Bilder, Fonts, Marker, Modelle
+- Alles darin wird ungeändert ins dist/ kopiert
+- für Dateien, die der Browser direkt laden soll
 
-Stammdateie
+Weitere zentrale Dateien:
 - package.json und package-lock.json - definiert Projektumgebung, einschließlich Abhängigkeiten und Skripte
 - vite.config.js - Konfiguration für das Vite-Build-Tool
 
