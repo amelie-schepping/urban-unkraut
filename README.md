@@ -1,11 +1,11 @@
 # urban-unkraut
-##Projekt Übersicht 
-Urban-Unkraut ist ein interdisziplinäres Projekt mit dem Ziel Menschen über für den im Raum Düsseldorf native Blumen und Pflanzen zu bilden und darüber hinaus zu animieren den Urbanen raum zu begrünen. 
-Wichtig ist hervor zu heben, dass es sich um Pflanzen handelt, die die Biodiversität fördern. 
+## Projekt Übersicht 
+Urban-Unkraut ist ein interdisziplinäres Projekt, das darauf abzielt, Menschen über die im Raum Düsseldorf heimischen Blumen und Pflanzen zu informieren und sie darüber hinaus zur Begrünung des urbanen Raums zu motivieren. 
+Es muss betont werden, dass es sich um Pflanzen handelt, die die Ökodiversität unterstützen. 
 
-Es werden analogePlakate in geschäten, cafesudn Orte in der stadt verteit. Menschen können die de Scannen udn gelangen dann auf unsere webseite. Von dort aus können dei die AR Experience staten. Dazu muss das poster nochmal von der webseite aus gescannt werden und eine Bluem wächst in AR. 
+Es werden analoge Plakate  in Geschäften, Cafés und an verschiedenen Orten der Stadt verteilt. Menschen können diese scannen und gelangen dann auf die  Webseite des Projekts. Von hier aus kann die AR Experience starten. Um diese zu erreichen, muss das Poster nochmals von der Webseite aus gescannt werden, und eine Blumen wachsen in AR. 
 
-Um möglichst viele menschan abzuholen, soll das Projekt soll auf allen Betriebsystemen und browsersn funktionieren. 
+Das Projekt soll auf allen Betriebssystemen und Browsern funktionieren, um möglichst viele Menschen abzuholen. 
 
 ## Funktionen
 - Scannen von physischen Markern, um das virtuelle Blume wachsen zu lassen
@@ -58,8 +58,8 @@ Das Projekt ist dann local erreichbei unter localhost. Das beudetet dann:
 Auf dem Handy testen:
 - Vorraussetzung: Handy udn REchner müssen im gleichen Netzwerk sein 
 - wenn  npm run dev gestartet wurde werden zwei adressen angezeigt:
-        - Local:   http://localhost:5173/
-        - Network: mit einer IP adresse
+    - Local: http://localhost:5173/
+    - Network: mit einer IP adresse
 - Öffne auf dem Handy den Network-Link 
 
 
