@@ -77,3 +77,5 @@ npm run build
 Wie die Marker erstellt wuren, um die AR Experience zu aktivieren.
 Die maker wurden generiert, um auf die Poster zu setzten.
 https://github.com/webarkit/Nft-Marker-Creator-App
+
+Dokumentation: https://ar-js-org.github.io/AR.js-Docs/image-tracking/
