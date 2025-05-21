@@ -71,3 +71,9 @@ Auf dem Handy testen:
 
 ### Bauen für die Produktion
 npm run build
+
+
+### Marker erstellen 
+Wie die Marker erstellt wuren, um die AR Experience zu aktivieren.
+Die maker wurden generiert, um auf die Poster zu setzten.
+https://github.com/webarkit/Nft-Marker-Creator-App
