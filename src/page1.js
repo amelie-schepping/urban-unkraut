@@ -11,6 +11,7 @@ AFRAME.registerComponent("gltf-with-animation", {
     const el = this.el;
     const loader = new THREE.GLTFLoader();
     const plantId = getPlantIdFromQuery();
+  
 
     // Pflanze freischalten
     const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
@@ -34,6 +35,7 @@ AFRAME.registerComponent("gltf-with-animation", {
           plant.model,
           (gltf) => {
             el.setObject3D("mesh", gltf.scene);
+            el.object3D.rotation.set(THREE.MathUtils.degToRad(-90), 0, 0);
 
             if (gltf.animations && gltf.animations.length > 0) {
               this.mixer = new THREE.AnimationMixer(gltf.scene);
@@ -50,6 +52,7 @@ AFRAME.registerComponent("gltf-with-animation", {
             nameText.setAttribute("width", 2);
             nameText.setAttribute("align", "center");
             el.appendChild(nameText);
+            
 
             // Beschreibung anzeigen
             const descText = document.createElement("a-text");
@@ -60,14 +63,16 @@ AFRAME.registerComponent("gltf-with-animation", {
             descText.setAttribute("align", "center");
             descText.setAttribute("baseline", "center");
             el.appendChild(descText);
+          
 
             // Bild anzeigen
             const image = document.createElement("a-image");
             image.setAttribute("src", plant.image);
-            image.setAttribute("position", "0.8 -0.4 0");
-            image.setAttribute("width", 1.2);
-            image.setAttribute("height", 1.2);
+            image.setAttribute("position", "1 -0.4 0");
+            image.setAttribute("width", 1.0);
+            image.setAttribute("height", 1.0);
             el.appendChild(image);
+          
           },
           undefined,
           (error) => {
