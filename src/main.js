@@ -5,6 +5,22 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // Styles
 import "./style.scss";
 
+// Pop-up "neue Pflanze freigeschaltet"
+window.addEventListener("DOMContentLoaded", () => {
+  const popupFlag = localStorage.getItem("showUnlockPopup");
+
+  if (popupFlag === "true") {
+    const popup = document.querySelector("#unlock-popup");
+    if (popup) {
+      popup.classList.remove("d-none");
+      setTimeout(() => {
+        popup.classList.add("d-none");
+        localStorage.removeItem("showUnlockPopup"); 
+      }, 4000); 
+    }
+  }
+});
+
 // Pflanzen dynamisch laden
 fetch("/urban-unkraut/assets/plants.json")
   .then((res) => res.json())

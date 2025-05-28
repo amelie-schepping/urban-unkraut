@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i>Anleitung</a>
+            <a class="nav-link" href="#anleitung"><i class="bi bi-info-circle me-1"></i>Anleitung</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#galerie"><i class="bi bi-book me-1"></i> Deine Bibliothek</a>
@@ -33,10 +33,29 @@
     </div>
   </nav>
 
+   <!-- Pop-up -->
+  <div
+      id="unlock-popup"
+      class="alert alert-success d-none text-center mx-auto mt-4"
+      style="font-size: 1.5rem; padding: 1rem 2rem; width: fit-content;
+             box-shadow: 0 0 20px 10px #fdf5b5; border-radius: 12px;">
+      🌼 Neue Pflanze freigeschaltet!
+  </div>
+
   <!-- Carusell + Bib -->
   <div class="container pt-5">
     <h2 class="text-center mb-4">Deine Bibliothek</h2>
     <section class=" text-white p-5 rounded" id="galerie">
+
+    <!-- Container unter Navbar -->
+    <div class="container pt-5">
+      <h2 class="text-center mb-4">Deine Bibliothek</h2>
+      <section class="bg-primary text-white p-5 rounded" id="galerie">
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- Wird dynamisch via main.js gefüllt -->
+          </div>
 
       <!-- Carousel -->
       <div id="carouselExample" class="carousel slide" data-bs-ride="false">
@@ -95,7 +114,7 @@
 
   <!--Samenkiosk-->
   <section class="container my-5" id="samenkiosk">
-    <h2 class="text-center mb-4">So gehts</h2>
+    <!--<h2 class="text-center mb-4">So gehts</h2> -->
     <div class="text-center mt-4" style="word-break: break-word;">
       wogjföoqerighüoeirhgoqüäihäoiahroühaälksfngqüoeaiuzjqüäkan
       fsgäaioe5züiqadknfäglkadhüoiswokeasndfbäladituzoqeiknaäldkr
@@ -111,6 +130,40 @@
 
 
 
-</body>
 
+    <section id="anleitung" class="guide-section py-5">
+      <div class="container text-center">
+        <div class="guide-icon mb-3">
+          <img src="" alt="Logo" class="guide-icon-img" />
+        </div>
+        <h2 class="guide-title mb-4">So geht’s:</h2>
+
+        <div class="guide-steps-grid">
+        <div class="step">
+          <p>Poster<br>Scannen</p>
+          <img src="/assets/icons/scannen.png" class="guide-icon-img" />
+        </div>
+        <div class="step">
+          <p>Blume in AR<br>einsammeln</p>
+          <img src="/assets/icons/einsammeln.png" class="guide-icon-img" />
+        </div>
+        <div class="step">
+          <p>Zur nächsten<br>Samenstation</p>
+          <img src="/assets/icons/samen.png" class="guide-icon-img" />
+        </div>
+        <div class="step">
+          <p>Samen<br>einpflanzen</p>
+          <img src="/assets/icons/einplanzen.png" class="guide-icon-img" />
+        </div>
+        <div class="step">
+          <p>Diversität<br>fördern</p>
+          <img src="/assets/icons/diversität.png" class="guide-icon-img" />
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
