@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>AR Interaktion</title>
+
+    <!-- A-Frame & AR.js -->
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body>
+    <a-scene
+      embedded
+      vr-mode-ui="enabled: false"
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false">
+      <!-- Marker -->
+      <a-marker
+        type="pattern"
+        url="/urban-unkraut/assets/markers/pattern-hiro.patt"
+        id="marker">
+        <!-- Klickbare Box -->
+        <a-box
+          id="clickableBox"
+          position="0 0.5 0"
+          color="tomato"
+          depth="0.5"
+          height="0.5"
+          width="0.5"
+          class="clickable"></a-box>
+
+        <!-- Text -->
+        <a-entity
+          id="infoText"
+          position="0 2 0"
+          scale="2 2 2"
+          text="value: Du hast den Block angeklickt!; color: black; align: center"
+          visible="false"
+          animation="property: position; to: 0 1 0; dur: 800; easing: easeOutQuad; startEvents: showText"></a-entity>
+      </a-marker>
+
+      <!-- Kamera + Raycasting -->
+      <a-entity
+        camera
+        look-controls="enabled: false"
+        cursor="rayOrigin: mouse"
+        raycaster="objects: .clickable"></a-entity>
+
+      <!-- Interaktionslogik -->
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const box = document.querySelector("#clickableBox");
+          const text = document.querySelector("#infoText");
+
+          box.addEventListener("click", () => {
+            // Text zeigen und Animation starten
+            text.setAttribute("visible", "true");
+            text.emit("showText");
+
+            // Boxfarbe ändern
+            box.setAttribute("color", "#4CAF50");
+
+            // Rotationsanimation hinzufügen
+            box.setAttribute("animation", {
+              property: "rotation",
+              to: "0 360 0",
+              loop: true,
+              dur: 2000,
+              easing: "linear",
+            });
+          });
+        });
+      </script>
+    </a-scene>
+  </body>
+</html>
