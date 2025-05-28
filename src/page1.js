@@ -17,6 +17,7 @@ AFRAME.registerComponent("gltf-with-animation", {
     if (!unlocked.includes(plantId)) {
       unlocked.push(plantId);
       localStorage.setItem("unlockedPlants", JSON.stringify(unlocked));
+      localStorage.setItem("showUnlockPopup", "true");
     }
 
     // Pflanzendaten aus JSON laden
