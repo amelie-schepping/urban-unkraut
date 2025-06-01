@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Unkraut</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rtl2nsi.css" />
+  </head>
+
+  <body class="">
+    <!-- Navigation -->
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/icons/logo.svg" alt="Urban Unkraut" width="60%" />
+        </a>
+
+        <button
+          class="navbar-toggler me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div
+            class="navbar-nav text-center d-flex flex-column gap-2 w-50 mx-auto">
+            <a href="#galerie" class="btn btn-outline-primary"
+              >Deine Bibliothek</a
+            >
+            <a href="#samenkiosk" class="btn btn-outline-primary">Samenkiosk</a>
+            <a href="#mission" class="btn btn-outline-primary">Mission</a>
+            <a href="#anleitung" class="btn btn-outline-primary">Anleitung</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="intro d-flex flex-column justify-content-center align-items-center text-center mb-4">
+      <img
+        src="/assets/icons/slogan.svg"
+        alt="Scannen. Sammeln. Sähen."
+        class="slogan mb-3" />
+      <p class="text-dark lead">
+        Eine Initiative Düsseldorf zu begrünen<br />
+        und alternative Pflanzen aufzuklären.
+      </p>
+    </section>
+
+    <section class="text-center text-dark mb-4">
+      <h2 class="display-4 mb-4">Deine Bibliothek</h2>
+
+      <section class="p-4" id="galerie">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- Wird dynamisch via main.js mit 3 Pflanzen pro Slide gefüllt -->
+          </div>
+
+          <!-- Steuerung -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Zurück</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Weiter</span>
+          </button>
+        </div>
+
+        <!-- Link zur Sammlung -->
+        <div class="d-flex justify-content-center mt-4">
+          <a
+            class="btn btn-outline-secondary"
+            href="library.html"
+            role="button">
+            zur Sammlung
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <div
+      class="modal fade"
+      id="plantModal"
+      tabindex="-1"
+      aria-labelledby="plantModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h2 class="modal-title" id="plantModalLabel">Pflanze</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Schließen"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
+            <p id="modalDescription" class="mb-3"></p>
+            <a id="modalLink" href="#" class="btn btn-outline-secondary"
+              >AR starten</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Mission-->
+    <section class="text-center mission text-dark p-4" id="mission">
+      <h2 class="display-4 mb-4">Unsere Mission</h2>
+      <p class="lead">
+        Wir wollen Düsseldorf begrünen und übernative Pflanzen aufklären. Mit
+        Urban Unkraut kannst du spielerisch lernen, welche Pflanzen in deiner
+        Umgebung wachsen und wie du sie nutzen kannst.
+      </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

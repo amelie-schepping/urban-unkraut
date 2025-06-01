@@ -15,8 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
       popup.classList.remove("d-none");
       setTimeout(() => {
         popup.classList.add("d-none");
-        localStorage.removeItem("showUnlockPopup"); 
-      }, 4000); 
+        localStorage.removeItem("showUnlockPopup");
+      }, 4000);
     }
   }
 });
@@ -60,7 +60,7 @@ fetch("/urban-unkraut/assets/plants.json")
         // Nur klickbar, wenn unlocked
         if (isUnlocked) {
           img.addEventListener("click", () => {
-            window.location.href = `/urban-unkraut/page1.html?${plant.id}`;
+            showPlantModal(plant);
           });
         }
 
@@ -73,3 +73,20 @@ fetch("/urban-unkraut/assets/plants.json")
     }
   })
   .catch((err) => console.error("Fehler beim Laden der Galerie:", err));
+
+function showPlantModal(plant) {
+  const modalTitle = document.getElementById("plantModalLabel");
+  const modalImage = document.getElementById("modalImage");
+  const modalDescription = document.getElementById("modalDescription");
+  const modalLink = document.getElementById("modalLink");
+
+  modalTitle.textContent = plant.name;
+  modalImage.src = plant.image;
+  modalImage.alt = plant.name;
+  modalDescription.textContent =
+    plant.description || "Beschreibung folgt bald.";
+  modalLink.href = `/urban-unkraut/page1.html?${plant.id}`;
+
+  const modal = new bootstrap.Modal(document.getElementById("plantModal"));
+  modal.show();
+}

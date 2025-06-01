@@ -13,14 +13,26 @@ $light: #f5f8f6;
 $baby-blue: #90a0d1;
 
 // === Bootstrap Farbvariablen überschreiben ===
-$body-bg: $green-light;
+$body-bg: $light;
 $primary: $green-dark;
-$secondary: $red;
+$secondary: $baby-blue;
 $success: $green-light;
 $dark: $green-dark;
 
 // === Button Styles ===
+$btn-bg: #fff;
+$btn-color: $baby-blue;
+$btn-border-color: $baby-blue;
 $btn-border-radius: 2rem;
+$btn-font-family: "gelica", sans-serif;
+
+$btn-padding-y: 0.375rem;
+$btn-padding-x: 1.75rem;
+
+$btn-outline-color: $baby-blue;
+$btn-outline-hover-bg: $baby-blue;
+$btn-outline-hover-color: #fff;
+$btn-outline-hover-border: $baby-blue;
 
 // === Bootstrap SCSS Imports ===
 @import "bootstrap/scss/functions";
@@ -35,11 +47,48 @@ $btn-border-radius: 2rem;
   font-style: normal;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: brightness(0) invert(30%);
+body {
+  overflow-x: hidden;
 }
 
 .navbar-brand {
   font-family: "gelica", sans-serif;
+}
+
+.btn {
+  font-style: italic;
+}
+
+.navbar {
+  border-bottom: 2px solid $green-dark;
+}
+body {
+  overflow-x: hidden;
+}
+
+.intro {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  background-image: url("/assets/icons/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .slogan {
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.mission {
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url("/assets/icons/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
