@@ -48,7 +48,7 @@ $btn-outline-hover-border: $baby-blue;
 }
 
 body {
-  overflow-x: hidden;
+  margin-top: 60px;
 }
 
 .btn {
@@ -73,31 +73,24 @@ body {
   }
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .intro {
-  width: 100vw;
-  overflow-x: hidden;
-  margin-top: 80px;
-  margin-bottom: 20px;
   background-image: url("/assets/icons/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   .slogan {
-    max-width: 70%;
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 75%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .slogan {
+      width: 50%;
+    }
   }
 }
 
 .mission {
-  width: 100vw;
-  overflow-x: hidden;
   background-image: url("/assets/icons/background.png");
   background-repeat: no-repeat;
   background-size: cover;
