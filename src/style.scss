@@ -51,17 +51,28 @@ body {
   overflow-x: hidden;
 }
 
-.navbar-brand {
-  font-family: "gelica", sans-serif;
-}
-
 .btn {
   font-style: italic;
 }
 
 .navbar {
   border-bottom: 2px solid $green-dark;
+
+  .navbar-brand {
+    font-family: "gelica", sans-serif;
+  }
+
+  .navbar-nav {
+    height: 88vh;
+    justify-content: center;
+
+    .btn {
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+    }
+  }
 }
+
 body {
   overflow-x: hidden;
 }
