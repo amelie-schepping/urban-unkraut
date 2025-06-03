@@ -96,3 +96,19 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.guide-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.guide-steps-grid p {
+  font-weight: 600;
+  color: #2b4d1b;
+}
+
+.guide-icon-img {
+  width: 50px;
+  height: auto;
+} 
