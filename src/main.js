@@ -90,3 +90,36 @@ function showPlantModal(plant) {
   const modal = new bootstrap.Modal(document.getElementById("plantModal"));
   modal.show();
 }
+
+// Pflanzen für Library (libary.html) anzeigen
+document.addEventListener("DOMContentLoaded", () => {
+  const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
+
+  fetch("/urban-unkraut/assets/plants.json")
+    .then((res) => res.json())
+    .then((plants) => {
+      plants.forEach((plant) => {
+        const card = document.getElementById(plant.id);
+        if (!card) return;
+
+        const img = card.querySelector("img");
+        const title = card.querySelector(".card-title");
+
+        const isUnlocked = unlocked.includes(plant.id);
+
+        if (isUnlocked) {
+          img.src = plant.image;
+          img.alt = plant.name;
+          title.textContent = plant.name;
+
+        } else {
+          img.src = "/urban-unkraut/assets/images/locked_icon.png";
+          img.alt = "Gesperrt";
+          title.textContent = "";
+        }
+      });
+    })
+    .catch((err) => {
+      console.error("Fehler beim Laden der Pflanzen:", err);
+    });
+});
