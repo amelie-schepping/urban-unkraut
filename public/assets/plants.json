@@ -5,6 +5,7 @@
     "image": "/urban-unkraut/assets/images/flower.png",
     "model": "/urban-unkraut/assets/models/leberbluemchen.glb",
     "description": "Diese Blume ist cool",
+    "descriptionImage": "/urban-unkraut/assets/pngs/leberbluemchen.png",
     "locked": true
   },
   {
@@ -21,6 +22,126 @@
     "image": "/urban-unkraut/assets/images/pink_flower.png",
     "model": "/urban-unkraut/assets/models/modelWTextures.glb",
     "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
+    "locked": true
+  },
+  {
+    "id": "blume4",
+    "name": "Wilde Möhre",
+    "image": "/urban-unkraut/assets/images/wilde_moehre.png",
+    "model": "/urban-unkraut/assets/models/wilde_moehre.glb",
+    "description": "Die Wilde Möhre ist eine heimische Wildpflanze mit weißen, doldenförmigen Blüten.",
+    "locked": true
+  },
+  {
+    "id": "blume5",
+    "name": "Gewöhnlicher Natternkopf",
+    "image": "/urban-unkraut/assets/images/natternkopf.png",
+    "model": "/urban-unkraut/assets/models/natternkopf.glb",
+    "description": "Der Gewöhnliche Natternkopf ist eine auffällige Pflanze mit blauen Blüten.",
+    "locked": true
+  },
+  {
+    "id": "blume6",
+    "name": "Gewöhnliche Wegwarte",
+    "image": "/urban-unkraut/assets/images/wegwarte.png",
+    "model": "/urban-unkraut/assets/models/wegwarte.glb",
+    "description": "Die Gewöhnliche Wegwarte hat himmelblaue Blüten und wächst an Wegrändern.",
+    "locked": true
+  },
+  {
+    "id": "blume7",
+    "name": "Gewöhnlicher Hornklee",
+    "image": "/urban-unkraut/assets/images/hornklee.png",
+    "model": "/urban-unkraut/assets/models/hornklee.glb",
+    "description": "Der Gewöhnliche Hornklee ist eine gelb blühende Wiesenpflanze.",
+    "locked": true
+  },
+  {
+    "id": "blume8",
+    "name": "Kleine Traubenhyazinthe",
+    "image": "/urban-unkraut/assets/images/traubenhyazinthe.png",
+    "model": "/urban-unkraut/assets/models/traubenhyazinthe.glb",
+    "description": "Die Kleine Traubenhyazinthe hat traubenförmige, blaue Blütenstände.",
+    "locked": true
+  },
+  {
+    "id": "blume9",
+    "name": "Magerwiesen-Margerite",
+    "image": "/urban-unkraut/assets/images/margerite.png",
+    "model": "/urban-unkraut/assets/models/margerite.glb",
+    "description": "Die Magerwiesen-Margerite ist eine typische Wiesenblume mit weißen Blütenblättern.",
+    "locked": true
+  },
+  {
+    "id": "blume10",
+    "name": "Gebirgs-Rose",
+    "image": "/urban-unkraut/assets/images/gebirgsrose.png",
+    "model": "/urban-unkraut/assets/models/gebirgsrose.glb",
+    "description": "Die Gebirgs-Rose ist eine seltene Wildrose mit zarten Blüten.",
+    "locked": true
+  },
+  {
+    "id": "blume11",
+    "name": "Gewöhnliche Schafgarbe",
+    "image": "/urban-unkraut/assets/images/schafgarbe.png",
+    "model": "/urban-unkraut/assets/models/schafgarbe.glb",
+    "description": "Die Gewöhnliche Schafgarbe hat weiße, dichte Blütendolden und gefiederte Blätter.",
+    "locked": true
+  },
+  {
+    "id": "blume12",
+    "name": "Kriechender Hahnenfuß",
+    "image": "/urban-unkraut/assets/images/hahnenfuss.png",
+    "model": "/urban-unkraut/assets/models/hahnenfuss.glb",
+    "description": "Der Kriechende Hahnenfuß ist eine gelb blühende, weit verbreitete Wiesenpflanze.",
+    "locked": true
+  },
+  {
+    "id": "blume13",
+    "name": "Spitzwegerich",
+    "image": "/urban-unkraut/assets/images/spitzwegerich.png",
+    "model": "/urban-unkraut/assets/models/spitzwegerich.glb",
+    "description": "Der Spitzwegerich ist eine Heilpflanze mit schmalen Blättern und unscheinbaren Blüten.",
+    "locked": true
+  },
+  {
+    "id": "blume14",
+    "name": "Acker-Ringelblume",
+    "image": "/urban-unkraut/assets/images/ringelblume.png",
+    "model": "/urban-unkraut/assets/models/ringelblume.glb",
+    "description": "Die Acker-Ringelblume hat leuchtend orange Blüten und wird oft als Heilpflanze genutzt.",
+    "locked": true
+  },
+  {
+    "id": "blume15",
+    "name": "Teufelsabbiss",
+    "image": "/urban-unkraut/assets/images/teufelsabbiss.png",
+    "model": "/urban-unkraut/assets/models/teufelsabbiss.glb",
+    "description": "Der Teufelsabbiss ist eine seltene Wiesenpflanze mit blauen Blütenköpfen.",
+    "locked": true
+  },
+  {
+    "id": "blume16",
+    "name": "Wiesen-Flockenblume",
+    "image": "/urban-unkraut/assets/images/flockenblume.png",
+    "model": "/urban-unkraut/assets/models/flockenblume.glb",
+    "description": "Die Wiesen-Flockenblume ist eine violett blühende Wiesenpflanze.",
+    "locked": true
+  },
+  {
+    "id": "blume17",
+    "name": "Rainfarn",
+    "image": "/urban-unkraut/assets/images/rainfarn.png",
+    "model": "/urban-unkraut/assets/models/rainfarn.glb",
+    "description": "Der Rainfarn hat gelbe, knopfartige Blüten und einen aromatischen Duft.",
+    "locked": true
+  },
+  {
+    "id": "blume18",
+    "name": "Kornblume",
+    "image": "/urban-unkraut/assets/images/kornblume.png",
+    "model": "/urban-unkraut/assets/models/kornblume.glb",
+    "description": "Die Kornblume ist eine auffällige, blau blühende Feldpflanze.",
     "locked": true
   }
 ]

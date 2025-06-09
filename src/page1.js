@@ -52,15 +52,13 @@ AFRAME.registerComponent("gltf-with-animation", {
             nameText.setAttribute("align", "center");
             el.appendChild(nameText);
 
-            // Beschreibung anzeigen
-            const descText = document.createElement("a-text");
-            descText.setAttribute("value", plant.description);
-            descText.setAttribute("position", "0.8 0.6 0");
-            descText.setAttribute("color", "#FFFFFF");
-            descText.setAttribute("width", 1);
-            descText.setAttribute("align", "center");
-            descText.setAttribute("baseline", "center");
-            el.appendChild(descText);
+            // Beschreibung als Bild anzeigen
+            const descImage = document.createElement("a-image");
+            descImage.setAttribute("src", plant.descriptionImage); // PNG aus dem JSON
+            descImage.setAttribute("position", "0.8 0.6 0");
+            descImage.setAttribute("width", 1.5); // ggf. anpassen
+            descImage.setAttribute("height", 0.5);
+            el.appendChild(descImage);
 
             // Bild anzeigen
             const image = document.createElement("a-image");
