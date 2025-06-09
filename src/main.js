@@ -94,29 +94,45 @@ function showPlantModal(plant) {
 // Pflanzen für Library (libary.html) anzeigen
 document.addEventListener("DOMContentLoaded", () => {
   const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
+  const libraryContainer = document.getElementById("library");
 
   fetch("/urban-unkraut/assets/plants.json")
     .then((res) => res.json())
     .then((plants) => {
       plants.forEach((plant) => {
-        const card = document.getElementById(plant.id);
-        if (!card) return;
-
-        const img = card.querySelector("img");
-        const title = card.querySelector(".card-title");
-
         const isUnlocked = unlocked.includes(plant.id);
 
-        if (isUnlocked) {
-          img.src = plant.image;
-          img.alt = plant.name;
-          title.textContent = plant.name;
+        const col = document.createElement("div");
+        col.className = "col-6 col-sm-4 col-md-3 col-lg-2";
 
-        } else {
-          img.src = "/urban-unkraut/assets/images/locked_icon.png";
-          img.alt = "Gesperrt";
-          title.textContent = "";
+        const card = document.createElement("div");
+        card.className = "card shadow-sm";
+        card.id = plant.id;
+
+        const cardBody = document.createElement("div");
+        cardBody.className = "card-body text-center";
+
+        const title = document.createElement("h5");
+        title.className = "card-title mt-2";
+        title.textContent = isUnlocked ? plant.name : "";
+
+        const img = document.createElement("img");
+        img.className = "img-fluid w-100";
+        img.src = isUnlocked
+          ? plant.image
+          : "/urban-unkraut/assets/images/locked_icon.png";
+        img.alt = isUnlocked ? plant.name : "Gesperrt";
+
+        if (isUnlocked) {
+          card.addEventListener("click", () => showPlantModal(plant));
+          card.style.cursor = "pointer";
         }
+
+        cardBody.appendChild(title);
+        cardBody.appendChild(img);
+        card.appendChild(cardBody);
+        col.appendChild(card);
+        libraryContainer.appendChild(col);
       });
     })
     .catch((err) => {
