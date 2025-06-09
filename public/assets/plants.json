@@ -5,7 +5,7 @@
     "image": "/urban-unkraut/assets/images/flower.png",
     "model": "/urban-unkraut/assets/models/leberbluemchen.glb",
     "description": "Diese Blume ist cool",
-    "descriptionImage": "/urban-unkraut/assets/pngs/leberbluemchen.png",
+    "descriptionImage": "/urban-unkraut/public/assets/pngs/leberbluemchen.png",
     "locked": true
   },
   {
