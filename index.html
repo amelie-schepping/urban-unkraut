@@ -1,84 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Unkraut</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rtl2nsi.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Unkraut</title>
-  <link rel="stylesheet" href="/src/style.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/rtl2nsi.css">
-</head>
+  <body class="">
+    <!-- Navigation -->
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/icons/logo.svg" alt="Urban Unkraut" width="60%" />
+        </a>
 
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#"> Urban Unkraut</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#galerie"><i class="bi bi-book me-1"></i> Deine Bibliothek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#samenkiosk"><i class="bi bi-shop me-1"></i> Samenkiosk</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#mission"><i class="bi bi-award me-1"></i>Mission</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#anleitung"><i class="bi bi-info-circle me-1"></i>Anleitung</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div
+            class="navbar-nav text-center d-flex flex-column gap-5 w-75 mx-auto">
+            <a href="library.html" class="btn btn-outline-primary"
+              >Deine Bibliothek</a
+            >
+            <a href="#samenkiosk" class="btn btn-outline-primary">Samenkiosk</a>
+            <a href="#mission" class="btn btn-outline-primary">Mission</a>
+            <a href="#anleitung" class="btn btn-outline-primary">Anleitung</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-  <!-- Pop-up -->
-  <div id="unlock-popup" class="alert alert-success d-none text-center mx-auto mt-4" style="font-size: 1.5rem; padding: 1rem 2rem; width: fit-content;
-             box-shadow: 0 0 20px 10px #fdf5b5; border-radius: 12px;">
-    🌼 Neue Pflanze freigeschaltet!
-  </div>
+    </nav>
 
-  <!--Intro-->
-  <div class="container p-2">
-    <h2 class="text-center mb-3">Scannen. Sammeln. Sähen.</h2>
-    <p>Eine Iniziative Düsseldorf zu begrünen und übernative Pflanzen aufzuklärenund</p>
-  </div>
+    <section
+      class="intro d-flex flex-column justify-content-center align-items-center text-center mb-4">
+      <img
+        src="/assets/icons/slogan.svg"
+        alt="Scannen. Sammeln. Sähen."
+        class="slogan mb-3" />
+      <p class="text-dark lead">
+        Eine Initiative Düsseldorf zu begrünen<br />
+        und alternative Pflanzen aufzuklären.
+      </p>
+    </section>
 
-  <!-- Carusell + Bib -->
-  <div class="container p-3 bg-dark">
-    <h1 class="text-center mb-5 text-white">Deine Bibliothek</h1>
-    <section class=" text-white p-6 rounded" id="galerie">
+    <section class="text-center text-dark mb-4">
+      <h2 class="display-4 mb-4">Deine Bibliothek</h2>
 
-      <!-- Carousel -->
-      <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+      <section class="p-4" id="galerie">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
           <div class="carousel-inner">
-            <!-- Wird dynamisch via main.js gefüllt -->
+            <!-- Wird dynamisch via main.js mit 3 Pflanzen pro Slide gefüllt -->
           </div>
 
           <!-- Steuerung -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Zurück</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Weiter</span>
           </button>
         </div>
+      </section>
 
-        <div class="d-flex justify-content-center mt-4">
-          <a class="btn btn-light" href="library.html" role="button">
-            Ganze Sammlung anzeigen
-          </a>
-        </div>
+      <!-- Link zur Sammlung -->
+      <div class="d-flex justify-content-center mt-4">
+        <a class="btn btn-outline-secondary" href="library.html" role="button">
+          zur Sammlung
+        </a>
+      </div>
     </section>
-  </div>
 
-  <!--Karte-->
+    <!-- PopUp für Blumen-->
+    <div
+      class="modal fade"
+      id="plantModal"
+      tabindex="-1"
+      aria-labelledby="plantModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h2 class="modal-title" id="plantModalLabel">Pflanze</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Schließen"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
+            <p id="modalDescription" class="mb-3"></p>
+            <a id="modalLink" href="#" class="btn btn-outline-secondary"
+              >AR starten</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Karte-->
   <section class="container my-5" id="samenkiosk">
     <h2 class="text-center mb-4">Samenstationen</h2>
     <p class="text-center mt-4">
@@ -96,18 +135,17 @@
 
   </section>
 
-  <!--Mission-->
-  <section class="container my-5 bgLight pb-5 pt-5" id="mission">
-    <h2 class="text-center mb-3">Unsere Mission</h2>
-    <div class="text-center mt-4" style="word-break: break-word;">
-      Unsere Mission ist es, durch ein interaktives AR-Erlebnis das Bewusstsein für lokale Pflanzenarten zu stärken.
-      Kennst du
-      schon jedes Unkraut? Hier hilfst du aktiv mit, die biologische Vielfalt in städtischen Räumen zu fördern, indem du
-      nicht
-      nur digitale, sondern auch reale Blumen zum Leben erweckst. </div>
-  </section>
+    <!--Mission-->
+    <section class="text-center mission text-dark p-4" id="mission">
+      <h2 class="display-4 mb-4">Unsere Mission</h2>
+      <p class="lead">
+        Wir wollen Düsseldorf begrünen und übernative Pflanzen aufklären. Mit
+        Urban Unkraut kannst du spielerisch lernen, welche Pflanzen in deiner
+        Umgebung wachsen und wie du sie nutzen kannst.
+      </p>
+    </section>
 
-  <!--Anleitung-->
+    <!--Anleitung-->
   <section class="container my-5" id="anleitung">
     <h2 class="text-center mb-4">So geht es:</h2>
     <p class="lead lead fs-6 text-center text-muted">
@@ -149,8 +187,7 @@
     </div>
   </section> 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
