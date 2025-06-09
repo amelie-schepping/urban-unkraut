@@ -111,6 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardBody = document.createElement("div");
         cardBody.className = "card-body text-center";
+        cardBody.style.minHeight = "260px";
 
         const title = document.createElement("h5");
         title.className = "card-title mt-2";
