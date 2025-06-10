@@ -44,23 +44,21 @@ AFRAME.registerComponent("gltf-with-animation", {
             }
 
             // Titel anzeigen
-            const nameText = document.createElement("a-text");
-            nameText.setAttribute("value", plant.name);
-            nameText.setAttribute("position", "0.8 0.8 0");
-            nameText.setAttribute("color", "#59772f");
-            nameText.setAttribute("width", 2);
-            nameText.setAttribute("align", "center");
-            el.appendChild(nameText);
+            // const nameText = document.createElement("a-text");
+            // nameText.setAttribute("value", plant.name);
+            // nameText.setAttribute("position", "0.8 0.8 0");
+            // nameText.setAttribute("color", "#59772f");
+            // nameText.setAttribute("width", 2);
+            // nameText.setAttribute("align", "center");
+            // el.appendChild(nameText);
 
-            // Beschreibung anzeigen
-            const descText = document.createElement("a-text");
-            descText.setAttribute("value", plant.description);
-            descText.setAttribute("position", "0.8 0.6 0");
-            descText.setAttribute("color", "#FFFFFF");
-            descText.setAttribute("width", 1);
-            descText.setAttribute("align", "center");
-            descText.setAttribute("baseline", "center");
-            el.appendChild(descText);
+            // Beschreibung als Bild anzeigen
+            const descImage = document.createElement("a-image");
+            descImage.setAttribute("src", plant.descriptionImage); // PNG aus dem JSON
+            descImage.setAttribute("position", "0.8 1 0");
+            descImage.setAttribute("width", 1);
+            descImage.setAttribute("height", 1);
+            el.appendChild(descImage);
 
             // Bild anzeigen
             const image = document.createElement("a-image");
