@@ -11,21 +11,13 @@
   {
     "id": "blume2",
     "name": "Gänseblümchen",
-    "image": "/urban-unkraut/assets/images/sunflower.png",
-    "model": "/urban-unkraut/assets/models/modelWTextures.glb",
-    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
-    "locked": true
-  },
-  {
-    "id": "blume3",
-    "name": "Gänseblümchen",
     "image": "/urban-unkraut/assets/images/pink_flower.png",
     "model": "/urban-unkraut/assets/models/modelWTextures.glb",
     "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
     "locked": true
   },
   {
-    "id": "blume4",
+    "id": "blume3",
     "name": "Wilde Möhre",
     "image": "/urban-unkraut/assets/images/wilde_moehre.png",
     "model": "/urban-unkraut/assets/models/wilde_moehre.glb",
@@ -33,7 +25,7 @@
     "locked": true
   },
   {
-    "id": "blume5",
+    "id": "blume4",
     "name": "Gewöhnlicher Natternkopf",
     "image": "/urban-unkraut/assets/images/natternkopf.png",
     "model": "/urban-unkraut/assets/models/natternkopf.glb",
@@ -41,7 +33,7 @@
     "locked": true
   },
   {
-    "id": "blume6",
+    "id": "blume5",
     "name": "Gewöhnliche Wegwarte",
     "image": "/urban-unkraut/assets/images/wegwarte.png",
     "model": "/urban-unkraut/assets/models/wegwarte.glb",
@@ -49,7 +41,7 @@
     "locked": true
   },
   {
-    "id": "blume7",
+    "id": "blume6",
     "name": "Gewöhnlicher Hornklee",
     "image": "/urban-unkraut/assets/images/hornklee.png",
     "model": "/urban-unkraut/assets/models/hornklee.glb",
@@ -57,7 +49,7 @@
     "locked": true
   },
   {
-    "id": "blume8",
+    "id": "blume7",
     "name": "Kleine Traubenhyazinthe",
     "image": "/urban-unkraut/assets/images/traubenhyazinthe.png",
     "model": "/urban-unkraut/assets/models/traubenhyazinthe.glb",
@@ -65,7 +57,7 @@
     "locked": true
   },
   {
-    "id": "blume9",
+    "id": "blume8",
     "name": "Magerwiesen-Margerite",
     "image": "/urban-unkraut/assets/images/margerite.png",
     "model": "/urban-unkraut/assets/models/margerite.glb",
@@ -73,7 +65,7 @@
     "locked": true
   },
   {
-    "id": "blume10",
+    "id": "blume9",
     "name": "Gebirgs-Rose",
     "image": "/urban-unkraut/assets/images/gebirgsrose.png",
     "model": "/urban-unkraut/assets/models/gebirgsrose.glb",
@@ -81,7 +73,7 @@
     "locked": true
   },
   {
-    "id": "blume11",
+    "id": "blume10",
     "name": "Gewöhnliche Schafgarbe",
     "image": "/urban-unkraut/assets/images/schafgarbe.png",
     "model": "/urban-unkraut/assets/models/schafgarbe.glb",
@@ -89,7 +81,7 @@
     "locked": true
   },
   {
-    "id": "blume12",
+    "id": "blume11",
     "name": "Kriechender Hahnenfuß",
     "image": "/urban-unkraut/assets/images/hahnenfuss.png",
     "model": "/urban-unkraut/assets/models/hahnenfuss.glb",
@@ -97,7 +89,7 @@
     "locked": true
   },
   {
-    "id": "blume13",
+    "id": "blume12",
     "name": "Spitzwegerich",
     "image": "/urban-unkraut/assets/images/spitzwegerich.png",
     "model": "/urban-unkraut/assets/models/spitzwegerich.glb",
@@ -105,7 +97,7 @@
     "locked": true
   },
   {
-    "id": "blume14",
+    "id": "blume13",
     "name": "Acker-Ringelblume",
     "image": "/urban-unkraut/assets/images/ringelblume.png",
     "model": "/urban-unkraut/assets/models/ringelblume.glb",
@@ -113,7 +105,7 @@
     "locked": true
   },
   {
-    "id": "blume15",
+    "id": "blume14",
     "name": "Teufelsabbiss",
     "image": "/urban-unkraut/assets/images/teufelsabbiss.png",
     "model": "/urban-unkraut/assets/models/teufelsabbiss.glb",
@@ -121,7 +113,7 @@
     "locked": true
   },
   {
-    "id": "blume16",
+    "id": "blume15",
     "name": "Wiesen-Flockenblume",
     "image": "/urban-unkraut/assets/images/flockenblume.png",
     "model": "/urban-unkraut/assets/models/flockenblume.glb",
@@ -129,7 +121,7 @@
     "locked": true
   },
   {
-    "id": "blume17",
+    "id": "blume16",
     "name": "Rainfarn",
     "image": "/urban-unkraut/assets/images/rainfarn.png",
     "model": "/urban-unkraut/assets/models/rainfarn.glb",
@@ -137,7 +129,7 @@
     "locked": true
   },
   {
-    "id": "blume18",
+    "id": "blume17",
     "name": "Kornblume",
     "image": "/urban-unkraut/assets/images/kornblume.png",
     "model": "/urban-unkraut/assets/models/kornblume.glb",
