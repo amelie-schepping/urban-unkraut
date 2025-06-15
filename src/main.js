@@ -93,7 +93,7 @@ function showPlantModal(plant) {
   modalImage.alt = plant.name;
   modalDescription.textContent =
     plant.description || "Beschreibung folgt bald.";
-  modalLink.href = `/urban-unkraut/page1.html?${plant.id}`;
+  modalLink.href = `/urban-unkraut/arExperience.html?id=${plant.id}`;
 
   const modal = new bootstrap.Modal(document.getElementById("plantModal"));
   modal.show();
