@@ -57,10 +57,18 @@ fetch("/urban-unkraut/assets/plants.json")
         img.classList.add("d-block", "w-100");
         img.alt = plant.name;
 
-        // Nur klickbar, wenn unlocked
         if (isUnlocked) {
           img.addEventListener("click", () => {
             showPlantModal(plant);
+          });
+          img.style.cursor = "pointer";
+        } else {
+          img.style.cursor = "not-allowed";
+          img.addEventListener("click", () => {
+            const lockedModal = new bootstrap.Modal(
+              document.getElementById("lockedPlantModal")
+            );
+            lockedModal.show();
           });
         }
 
@@ -127,6 +135,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isUnlocked) {
           card.addEventListener("click", () => showPlantModal(plant));
           card.style.cursor = "pointer";
+        } else {
+          card.style.cursor = "not-allowed";
+          card.addEventListener("click", () => {
+            const lockedModal = new bootstrap.Modal(
+              document.getElementById("lockedModal")
+            );
+            lockedModal.show();
+          });
         }
 
         cardBody.appendChild(title);

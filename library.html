@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Unkraut</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Unkraut</title>
-  <link rel="stylesheet" href="/src/style.css" />
-</head>
-
-<body>
-  <!-- Navigation -->
-  <!-- <nav class="navbar bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/assets/icons/logo.svg" alt="Urban Unkraut" width="60%" />
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar bg-light fixed-top">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center" href="#index.html">
+          <img
+            src="/assets/icons/logo.svg"
+            alt="Urban Unkraut"
+            style="height: 50px" />
         </a>
 
         <button
-          class="navbar-toggler me-2"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -26,72 +29,94 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div
             class="navbar-nav text-center d-flex flex-column gap-5 w-75 mx-auto">
             <a href="library.html" class="btn btn-outline-primary"
               >Deine Bibliothek</a
             >
-            <a href="#samenkiosk" class="btn btn-outline-primary">Samenkiosk</a>
-            <a href="#mission" class="btn btn-outline-primary">Mission</a>
-            <a href="#anleitung" class="btn btn-outline-primary">Anleitung</a>
+            <a href="index.html#samenkiosk" class="btn btn-outline-primary"
+              >Samenstation</a
+            >
+            <a href="index.html#mission" class="btn btn-outline-primary"
+              >Mission</a
+            >
+            <a href="index.html#anleitung" class="btn btn-outline-primary"
+              >Anleitung</a
+            >
           </div>
         </div>
       </div>
-    </nav> -->
-  <!-- Navigation -->
-  <nav class="navbar bg-light fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a class="navbar-brand d-flex align-items-center" href="#index.html">
-        <img src="/assets/icons/logo.svg" alt="Urban Unkraut" style="height: 50px;" />
-      </a>
+    </nav>
+    î
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container text-center pt-3">
+      <a class="btn btn-outline-dark" href="index.html" role="button">zurück</a>
+    </div>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav text-center d-flex flex-column gap-5 w-75 mx-auto">
-          <a href="library.html" class="btn btn-outline-primary">Deine Bibliothek</a>
-          <a href="index.html#samenkiosk" class="btn btn-outline-primary">Samenstation</a>
-          <a href="index.html#mission" class="btn btn-outline-primary">Mission</a>
-          <a href="index.html#anleitung" class="btn btn-outline-primary">Anleitung</a>
+    <!-- Galerie-Bereich -->
+    <section class="container my-3" id="galerie">
+      <h2 class="text-center mb-4 display-4">Deine Bibliothek</h2>
+      <div class="row g-4" id="library">
+        <!-- Karten werden über javascript geladen -->
+      </div>
+    </section>
+
+    <!-- PopUp für Blumen-->
+    <div
+      class="modal fade"
+      id="plantModal"
+      tabindex="-1"
+      aria-labelledby="plantModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h2 class="modal-title" id="plantModalLabel">Pflanze</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Schließen"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
+            <p id="modalDescription" class="mb-3"></p>
+            <a id="modalLink" href="#" class="btn btn-outline-secondary"
+              >AR starten</a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-  <div class="container text-center pt-3">
-    <a class="btn btn-outline-dark" href="index.html" role="button">zurück</a>
-  </div>
-
-  <!-- Galerie-Bereich -->
-  <section class="container my-3" id="galerie">
-    <h2 class="text-center mb-4 display-4">Deine Bibliothek</h2>
-    <div class="row g-4" id="library">
-      <!-- Karten werden über javascript geladen -->
-    </div>
-  </section>
-
-  <!-- PopUp für Blumen-->
-  <div class="modal fade" id="plantModal" tabindex="-1" aria-labelledby="plantModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content text-dark">
-        <div class="modal-header">
-          <h2 class="modal-title" id="plantModalLabel">Pflanze</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-        </div>
-        <div class="modal-body text-center">
-          <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
-          <p id="modalDescription" class="mb-3"></p>
-          <a id="modalLink" href="#" class="btn btn-outline-secondary">AR starten</a>
+    <!-- Locked Plant Modal -->
+    <div
+      class="modal fade"
+      id="lockedModal"
+      tabindex="-1"
+      aria-labelledby="lockedModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lockedModalLabel">Pflanze gesperrt</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Schließen"></button>
+          </div>
+          <div class="modal-body text-center">
+            Diese Pflanze ist gesperrt.<br />
+            Finde weitere Poster in der Stadt, um mehr Pflanzen freizuschalten.
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
