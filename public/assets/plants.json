@@ -2,7 +2,7 @@
   {
     "id": "blume1",
     "name": "Leberblümchen",
-    "image": "/urban-unkraut/assets/images/flower.png",
+    "image": "/urban-unkraut/assets/images/leberblume.png",
     "model": "/urban-unkraut/assets/models/leberbluemchen.glb",
     "description": "Diese Blume ist cool",
     "descriptionImage": "/urban-unkraut/public/assets/pngs/leberbluemchen.png",
@@ -10,26 +10,26 @@
   },
   {
     "id": "blume2",
-    "name": "Gänseblümchen",
-    "image": "/urban-unkraut/assets/images/pink_flower.png",
+    "name": "Hornklee",
+    "image": "/urban-unkraut/assets/images/hornklee.png",
     "model": "/urban-unkraut/assets/models/modelWTextures.glb",
-    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
+    "description": "Der Hornklee ist eine gelb blühende Wiesenpflanze.",
     "locked": true
   },
   {
     "id": "blume3",
-    "name": "Wilde Möhre",
-    "image": "/urban-unkraut/assets/images/wilde_moehre.png",
-    "model": "/urban-unkraut/assets/models/wilde_moehre.glb",
-    "description": "Die Wilde Möhre ist eine heimische Wildpflanze mit weißen, doldenförmigen Blüten.",
+    "name": "Gebirgs-Rose",
+    "image": "/urban-unkraut/assets/images/gebirgsrose.png",
+    "model": "/urban-unkraut/assets/models/gebirgsrose.glb",
+    "description": "Die Gebirgs-Rose ist eine seltene Wildrose mit zarten Blüten.",
     "locked": true
   },
   {
     "id": "blume4",
-    "name": "Gewöhnlicher Natternkopf",
-    "image": "/urban-unkraut/assets/images/natternkopf.png",
-    "model": "/urban-unkraut/assets/models/natternkopf.glb",
-    "description": "Der Gewöhnliche Natternkopf ist eine auffällige Pflanze mit blauen Blüten.",
+    "name": "Flockenblume",
+    "image": "/urban-unkraut/assets/images/flockenblume.png",
+    "model": "/urban-unkraut/assets/models/flockenblume.glb",
+    "description": "Die Flockenblume ist eine violett blühende Wiesenpflanze.",
     "locked": true
   },
   {
@@ -42,10 +42,10 @@
   },
   {
     "id": "blume6",
-    "name": "Gewöhnlicher Hornklee",
-    "image": "/urban-unkraut/assets/images/hornklee.png",
-    "model": "/urban-unkraut/assets/models/hornklee.glb",
-    "description": "Der Gewöhnliche Hornklee ist eine gelb blühende Wiesenpflanze.",
+    "name": "Gänseblümchen",
+    "image": "/urban-unkraut/assets/images/pink_flower.png",
+    "model": "/urban-unkraut/assets/models/modelWTextures.glb",
+    "description": "Das Gänseblümchen ist eine kleine Blume mit weiß-gelben Blüten.",
     "locked": true
   },
   {
@@ -66,10 +66,10 @@
   },
   {
     "id": "blume9",
-    "name": "Gebirgs-Rose",
-    "image": "/urban-unkraut/assets/images/gebirgsrose.png",
-    "model": "/urban-unkraut/assets/models/gebirgsrose.glb",
-    "description": "Die Gebirgs-Rose ist eine seltene Wildrose mit zarten Blüten.",
+    "name": "Gewöhnlicher Natternkopf",
+    "image": "/urban-unkraut/assets/images/natternkopf.png",
+    "model": "/urban-unkraut/assets/models/natternkopf.glb",
+    "description": "Der Gewöhnliche Natternkopf ist eine auffällige Pflanze mit blauen Blüten.",
     "locked": true
   },
   {
@@ -114,10 +114,10 @@
   },
   {
     "id": "blume15",
-    "name": "Wiesen-Flockenblume",
-    "image": "/urban-unkraut/assets/images/flockenblume.png",
-    "model": "/urban-unkraut/assets/models/flockenblume.glb",
-    "description": "Die Wiesen-Flockenblume ist eine violett blühende Wiesenpflanze.",
+    "name": "Wilde Möhre",
+    "image": "/urban-unkraut/assets/images/wilde_moehre.png",
+    "model": "/urban-unkraut/assets/models/wilde_moehre.glb",
+    "description": "Die Wilde Möhre ist eine heimische Wildpflanze mit weißen, doldenförmigen Blüten.",
     "locked": true
   },
   {
