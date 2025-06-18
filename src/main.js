@@ -101,12 +101,40 @@ function showPlantModal(plant) {
 
 // Pflanzen für Library (libary.html) anzeigen
 document.addEventListener("DOMContentLoaded", () => {
-  const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
-  const libraryContainer = document.getElementById("library");
+  //const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
+  const libraryContainer = document.getElementById("library");  
 
   fetch("/urban-unkraut/assets/plants.json")
     .then((res) => res.json())
     .then((plants) => {
+      const unlocked = JSON.parse(localStorage.getItem("unlockedPlants") || "[]");
+
+    // Progress bar
+    const unlockedCount = unlocked.length;
+    const totalCount = plants.length;
+    const percent = Math.round((unlockedCount / totalCount) * 100);
+
+    const progressBar = document.getElementById("progressBar");
+    const progressText = document.getElementById("progressText");
+
+    if (progressBar && progressText) {
+      progressBar.style.width = `${percent}%`;
+      progressBar.setAttribute("aria-valuenow", percent);
+      progressText.textContent = `${unlockedCount} von ${totalCount} freigeschaltet`;
+    }
+
+
+    // Glückwunsch-Nachricht anzeigen, wenn alle freigeschaltet sind
+    const congratsMessage = document.getElementById("congratsMessage");
+    if (congratsMessage) {
+      if (unlockedCount === totalCount) {
+        congratsMessage.classList.remove("d-none");
+      } else {
+        congratsMessage.classList.add("d-none");
+      }
+    }
+
+
       plants.forEach((plant) => {
         const isUnlocked = unlocked.includes(plant.id);
 
