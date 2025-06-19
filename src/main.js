@@ -93,7 +93,8 @@ function showPlantModal(plant) {
   modalImage.alt = plant.name;
   modalDescription.textContent =
     plant.description || "Beschreibung folgt bald.";
-  modalLink.href = `/urban-unkraut/arExperience.html?id=${plant.id}`;
+//  modalLink.href = `/urban-unkraut/arExperience.html?id=${plant.id}`;
+  modalLink.href = "https://amelies.8thwall.app/urban-nature/?id=leberblume";
 
   const modal = new bootstrap.Modal(document.getElementById("plantModal"));
   modal.show();
