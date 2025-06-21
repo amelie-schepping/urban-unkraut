@@ -1,262 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Unkraut</title>
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/rtl2nsi.css" />
-  </head>
 
-  <body class="">
-    <!-- Navigation -->
-    <nav class="navbar bg-light fixed-top">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand d-flex align-items-center" href="#index.html">
-          <img
-            src="/assets/icons/logo.svg"
-            alt="Urban Unkraut"
-            style="height: 50px" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Unkraut</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/rtl2nsi.css" />
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body class="">
+  <!-- Navigation -->
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#index.html">
+        <img src="/assets/icons/logo.svg" alt="Urban Unkraut" style="height: 50px" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav text-center d-flex flex-column gap-5 w-75 mx-auto">
+          <a href="library.html" class="btn btn-outline-primary">Deine Bibliothek</a>
+          <a href="#samenkiosk" class="btn btn-outline-primary">Samenstation</a>
+          <a href="#mission" class="btn btn-outline-primary">Mission</a>
+          <a href="#anleitung" class="btn btn-outline-primary">Anleitung</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="intro d-flex flex-column justify-content-center align-items-center text-center mb-4">
+    <img src="/assets/icons/slogan.svg" alt="Scannen. Sammeln. Sähen." class="slogan mb-3" />
+    <p class="text-dark lead">
+      Eine Initiative Düsseldorf zu begrünen<br />
+      und alternative Pflanzen aufzuklären.
+    </p>
+  </section>
+
+  <section class="text-center text-dark mb-4 green-light" id="bibliothek">
+    <h2 class="display-4 mb-4">Deine Bibliothek</h2>
+
+    <section class="p-4" id="galerie">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <!-- Wird dynamisch via main.js mit 3 Pflanzen pro Slide gefüllt -->
+        </div>
+
+        <!-- Steuerung -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Zurück</span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div
-            class="navbar-nav text-center d-flex flex-column gap-5 w-75 mx-auto">
-            <a href="library.html" class="btn btn-outline-primary"
-              >Deine Bibliothek</a
-            >
-            <a href="#samenkiosk" class="btn btn-outline-primary"
-              >Samenstation</a
-            >
-            <a href="#mission" class="btn btn-outline-primary">Mission</a>
-            <a href="#anleitung" class="btn btn-outline-primary">Anleitung</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <section
-      class="intro d-flex flex-column justify-content-center align-items-center text-center mb-4">
-      <img
-        src="/assets/icons/slogan.svg"
-        alt="Scannen. Sammeln. Sähen."
-        class="slogan mb-3" />
-      <p class="text-dark lead">
-        Eine Initiative Düsseldorf zu begrünen<br />
-        und alternative Pflanzen aufzuklären.
-      </p>
-    </section>
-
-    <section class="text-center text-dark mb-4 green-light" id="bibliothek">
-      <h2 class="display-4 mb-4">Deine Bibliothek</h2>
-
-      <section class="p-4" id="galerie">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-inner">
-            <!-- Wird dynamisch via main.js mit 3 Pflanzen pro Slide gefüllt -->
-          </div>
-
-          <!-- Steuerung -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Zurück</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Weiter</span>
-          </button>
-        </div>
-      </section>
-
-      <!-- Link zur Sammlung -->
-      <div class="d-flex justify-content-center mt-4">
-        <a class="btn btn-outline-secondary" href="library.html" role="button">
-          zur Sammlung
-        </a>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Weiter</span>
+        </button>
       </div>
     </section>
 
-    <!-- PopUp für Blumen-->
-    <div
-      class="modal fade"
-      id="plantModal"
-      tabindex="-1"
-      aria-labelledby="plantModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content text-dark">
-          <div class="modal-header">
-            <h2 class="modal-title" id="plantModalLabel">Pflanze</h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Schließen"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
-            <p id="modalDescription" class="mb-3"></p>
-            <a id="modalLink" href="#" class="btn btn-outline-secondary"
-              >AR starten</a
-            >
-          </div>
+    <!-- Link zur Sammlung -->
+    <div class="d-flex justify-content-center mt-4">
+      <a class="btn btn-outline-secondary" href="library.html" role="button">
+        zur Sammlung
+      </a>
+    </div>
+  </section>
+
+  <!-- PopUp für Blumen-->
+  <div class="modal fade" id="plantModal" tabindex="-1" aria-labelledby="plantModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h2 class="modal-title" id="plantModalLabel">Pflanze</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
+          <p id="modalDescription" class="mb-3"></p>
+          <a id="modalLink" href="#" class="btn btn-outline-secondary">AR starten</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Hinweis: Pflanze gesperrt -->
-    <div
-      class="modal fade"
-      id="lockedPlantModal"
-      tabindex="-1"
-      aria-labelledby="lockedPlantModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="lockedPlantModalLabel">
-              Pflanze gesperrt
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Schließen"></button>
-          </div>
-          <div class="modal-body text-center">
-            Diese Pflanze ist gesperrt.<br />Finde weitere Poster in der Stadt,
-            um mehr Pflanzen freizuschalten.
-          </div>
+  <!-- Hinweis: Pflanze gesperrt -->
+  <div class="modal fade" id="lockedPlantModal" tabindex="-1" aria-labelledby="lockedPlantModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lockedPlantModalLabel">
+            Pflanze gesperrt
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body text-center">
+          Diese Pflanze ist gesperrt.<br />Finde weitere Poster in der Stadt,
+          um mehr Pflanzen freizuschalten.
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Karte-->
-    <section class="text-center text-dark mb-4 green-light" id="samenkiosk">
-      <h2 class="display-4 mb-4">Samenstation</h2>
-      <p class="text-center mt-4">
-        Hier kannst du dir ein Samenpaket abholen, um die Stadt zu begrünen.
-      </p>
+  <!--Karte-->
+  <section class="text-center text-dark mb-4 green-light" id="samenkiosk">
+    <h2 class="display-4 mb-4">Samenstation</h2>
+    <p class="text-center m-4">
+      Auf der Karte findest du Orte an denen Samenpakete udn Poster.
+      An den Orten mit roten Pins findest du Samenpaket, die du abholen kannst, um die Stadt zu begrünen. Gehe in den
+      Laden und fragen bei einer/einem Mitarbiter:in nach, solltest du das Paket nicht finden.
+      An den grünen Pindest du weietre Plakate mit Blumen, die du freischalten und sammeln kannst.
+    </p>
 
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1hrLAgro1GPldJjIfeMyrkQfPz9-EKn8&ehbc=2E312F&noprof=1"
-          width="640"
-          height="480"></iframe>
-      </div>
-    </section>
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1hrLAgro1GPldJjIfeMyrkQfPz9-EKn8&ehbc=2E312F&noprof=1"
+        width="640" height="480"></iframe>
+    </div>
+  </section>
 
-    <!--Mission-->
-    <section class="text-center mission text-dark p-4" id="mission">
-      <h2 class="display-4 mb-4">Unsere Mission</h2>
-      <p class="lead">
-        Wir wollen Düsseldorf begrünen und übernative Pflanzen aufklären. Mit
-        Urban Unkraut kannst du spielerisch lernen, welche Pflanzen in deiner
-        Umgebung wachsen und wie du sie nutzen kannst.
-      </p>
-    </section>
+  <!--Mission-->
+  <section class="text-center mission text-dark p-4" id="mission">
+    <h2 class="display-4 mb-4">Unsere Mission</h2>
+    <p class="lead">
+      Wir wollen Düsseldorf begrünen und übernative Pflanzen aufklären. Mit
+      Urban Unkraut kannst du spielerisch lernen, welche Pflanzen in deiner
+      Umgebung wachsen und wie du sie nutzen kannst.
+    </p>
+  </section>
 
-    <!--Anleitung-->
-    <section class="text-center text-dark mb-4 green-light" id="anleitung">
-      <h2 class="display-4 mb-4">So geht es:</h2>
-      <section id="schritte" class="py-3 bg-success-subtle">
-        <div class="container text-center">
-          <div class="d-flex justify-content-between flex-wrap">
-            <div class="px-0">
-              <p class="fw-semibold small mb-0">Poster<br />Scannen</p>
-              <img
-                src="/assets/icons/scannen.png"
-                class="img-fluid"
-                alt="Poster scannen"
-                width="40" />
-            </div>
-            <div class="px-0">
-              <p class="fw-semibold small mb-0">Blume<br />einsammeln</p>
-              <img
-                src="/assets/icons/einsammeln.png"
-                class="img-fluid"
-                alt="Blume einsammeln"
-                width="40" />
-            </div>
-            <div class="px-0">
-              <p class="fw-semibold small mb-0">Zur<br />Samenstation</p>
-              <img
-                src="/assets/icons/samen.png"
-                class="img-fluid"
-                alt="Samenstation"
-                width="40" />
-            </div>
-            <div class="px-0">
-              <p class="fw-semibold small mb-0">Samen<br />einpflanzen</p>
-              <img
-                src="/assets/icons/einplanzen.png"
-                class="img-fluid"
-                alt="Samen einpflanzen"
-                width="40" />
-            </div>
-            <!-- <div class="px-0">
+  <!--Anleitung-->
+  <section class="text-center text-dark mb-4 green-light" id="anleitung">
+    <h2 class="display-4 mb-4">So geht es:</h2>
+    <section id="schritte" class="py-3 bg-success-subtle">
+      <div class="container text-center">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="px-0">
+            <p class="fw-semibold small mb-0">Poster<br />Scannen</p>
+            <img src="/assets/icons/scannen.png" class="img-fluid" alt="Poster scannen" width="40" />
+          </div>
+          <div class="px-0">
+            <p class="fw-semibold small mb-0">Blume<br />einsammeln</p>
+            <img src="/assets/icons/einsammeln.png" class="img-fluid" alt="Blume einsammeln" width="40" />
+          </div>
+          <div class="px-0">
+            <p class="fw-semibold small mb-0">Zur<br />Samenstation</p>
+            <img src="/assets/icons/samen.png" class="img-fluid" alt="Samenstation" width="40" />
+          </div>
+          <div class="px-0">
+            <p class="fw-semibold small mb-0">Samen<br />einpflanzen</p>
+            <img src="/assets/icons/einplanzen.png" class="img-fluid" alt="Samen einpflanzen" width="40" />
+          </div>
+          <!-- <div class="px-0">
             <p class="fw-semibold small mb-0">Diversität<br>fördern</p>
             <img src="/assets/icons/diversität.png" class="img-fluid" alt="Diversität fördern" width="40" />
           </div> -->
-          </div>
         </div>
-      </section>
-
-      <section class="container my-2" id="anleitung">
-        <p class="lead lead fs-6 text-center text-muted">
-          Scanne die Poster in den
-          <a href="#samenkiosk">teilnehmenden Samenstationen</a> um native
-          Pflanzenarten digital freizuschalten & per Augmented Reality direkt
-          vor dir zu sehen.
-        </p>
-        <p class="lead lead fs-6 text-center text-muted">
-          Direkt dort bekommst du ein passendes Samenpaket, das du selber säen
-          kannst um zur Begrünung deiner Umgebung beitragen zu können!
-        </p>
-      </section>
+      </div>
     </section>
 
+    <section class="container my-2" id="anleitung">
+      <p class="lead lead fs-6 text-center text-muted">
+        Scanne die Poster in den
+        <a href="#samenkiosk">teilnehmenden Samenstationen</a> um native
+        Pflanzenarten digital freizuschalten & per Augmented Reality direkt
+        vor dir zu sehen.
+      </p>
+      <p class="lead lead fs-6 text-center text-muted">
+        Direkt dort bekommst du ein passendes Samenpaket, das du selber säen
+        kannst um zur Begrünung deiner Umgebung beitragen zu können!
+      </p>
+    </section>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarCollapse = document.getElementById("navbarNavAltMarkup");
-        const navLinks = navbarCollapse.querySelectorAll(".nav-link, .btn");
 
-        navLinks.forEach(link => {
-          link.addEventListener("click", () => {
-            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-            if (bsCollapse) {
-              bsCollapse.hide();
-            }
-          });
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarCollapse = document.getElementById("navbarNavAltMarkup");
+      const navLinks = navbarCollapse.querySelectorAll(".nav-link, .btn");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
         });
       });
-    </script>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    });
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
 
-  <footer class="text-center">
-    <p>©2025</p>
-  </footer>
+<footer class="text-center">
+  <p>©2025</p>
+</footer>
+
 </html>
