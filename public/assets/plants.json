@@ -4,14 +4,14 @@
     "name": "Leberblümchen",
     "image": "/urban-unkraut/assets/images/leberblume.png",
     "model": "/urban-unkraut/assets/models/leberblume.glb",
-    "description": "Diese Blume ist cool",
+    "description": "Leberblümchen sind zarte Frühblüher aus der Familie der Hahnenfußgewächse.",
     "descriptionImage": "/urban-unkraut/public/assets/pngs/leberbluemchen.png",
     "locked": true
   },
- {
+  {
     "id": "spitzwegerich",
     "name": "Spitzwegerich",
-    "image": "/urban-unkraut/assets/images/spitzwegerich.png",
+    "image": "/urban-unkraut/assets/images/hornklee.png",
     "model": "/urban-unkraut/assets/models/spitzwegerich.glb",
     "description": "Der Spitzwegerich ist eine Heilpflanze mit schmalen Blättern und unscheinbaren Blüten.",
     "locked": true
