@@ -9,7 +9,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        page1: resolve(__dirname, "page1.html"),
+        library: resolve(__dirname, "library.html"),
+        arExperience: resolve(__dirname, "arExperience.html"),
       },
     },
   },
