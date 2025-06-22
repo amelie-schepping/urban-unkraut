@@ -17,16 +17,16 @@
     "locked": true
   },
   {
-    "id": "hornklee",
-    "name": "Hornklee",
-    "image": "/urban-unkraut/assets/images/hornklee.png",
+    "id": "traubenhyazinthe",
+    "name": "Traubenhyazinthe",
+    "image": "/urban-unkraut/assets/images/gebirgsrose.png",
     "model": "/urban-unkraut/assets/models/hornklee.glb",
-    "description": "Der Hornklee ist eine gelb blühende Wiesenpflanze.",
+    "description": "Die Kleine Traubenhyazinthe hat traubenförmige, blaue Blütenstände.",
     "locked": true
   },
   {
-    "id": "blume3",
-    "name": "Gebirgs-Rose",
+    "id": "blume6",
+    "name": "Traubenhyazinthe",
     "image": "/urban-unkraut/assets/images/gebirgsrose.png",
     "model": "/urban-unkraut/assets/models/gebirgsrose.glb",
     "description": "Die Gebirgs-Rose ist eine seltene Wildrose mit zarten Blüten.",
