@@ -11,13 +11,13 @@
   {
     "id": "spitzwegerich",
     "name": "Spitzwegerich",
-    "image": "/urban-unkraut/assets/images/hornklee.png",
+    "image": "/urban-unkraut/assets/images/spitzwegerich.png",
     "model": "/urban-unkraut/assets/models/spitzwegerich.glb",
     "description": "Der Spitzwegerich ist eine Heilpflanze mit schmalen Blättern und unscheinbaren Blüten.",
     "locked": true
   },
   {
-    "id": "blume2",
+    "id": "hornklee",
     "name": "Hornklee",
     "image": "/urban-unkraut/assets/images/hornklee.png",
     "model": "/urban-unkraut/assets/models/hornklee.glb",
