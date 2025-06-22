@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Unkraut</title>
+    <link rel="stylesheet" href="https://use.typekit.net/rtl2nsi.css" />
+    <link rel="stylesheet" crossorigin href="/urban-unkraut/assets/style-WQuX9-Pr.css">
+  </head>
+
+  <body>
+    <script>
+      function getPlantIdFromQuery() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("id");
+      }
+
+      const plantId = getPlantIdFromQuery();
+
+      if (plantId) {
+        // Pflanze als "freigeschaltet" im localStorage speichern
+        const unlocked = JSON.parse(
+          localStorage.getItem("unlockedPlants") || "[]"
+        );
+
+        if (!unlocked.includes(plantId)) {
+          unlocked.push(plantId);
+          localStorage.setItem("unlockedPlants", JSON.stringify(unlocked));
+          localStorage.setItem("showUnlockPopup", "true");
+        }
+
+        // Weiterleitung zur 8th Wall Experience mit gleichem ?id=
+        const targetUrl = `https://amelies.8thwall.app/urban-nature/?id=${encodeURIComponent(
+          plantId
+        )}`;
+        window.location.href = targetUrl;
+      } else {
+        document.body.innerHTML =
+          "<p>Fehlende Pflanzen-ID. Bitte Link überprüfen.</p>";
+      }
+    </script>
+  </body>
+</html>
