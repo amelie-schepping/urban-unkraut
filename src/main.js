@@ -1,8 +1,5 @@
-// Bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap + Styles
 import "bootstrap-icons/font/bootstrap-icons.css";
-
-// Styles
 import "./style.scss";
 
 // Pop-up "neue Pflanze freigeschaltet"
@@ -147,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.id = plant.id;
 
         const cardBody = document.createElement("div");
-        cardBody.className = "card-body text-center";
+        cardBody.className = "card-body text-center align-content-center";
         cardBody.style.minHeight = "260px";
 
         const title = document.createElement("h5");

@@ -19,7 +19,7 @@
   {
     "id": "traubenhyazinthe",
     "name": "Traubenhyazinthe",
-    "image": "/urban-unkraut/assets/images/gebirgsrose.png",
+    "image": "/urban-unkraut/assets/images/traubenhyazinthe.png",
     "model": "/urban-unkraut/assets/models/hornklee.glb",
     "description": "Die Kleine Traubenhyazinthe hat traubenförmige, blaue Blütenstände.",
     "locked": true
